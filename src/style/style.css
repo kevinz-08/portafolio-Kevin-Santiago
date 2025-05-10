@@ -1,0 +1,28 @@
+@import url(variables.css);
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-8);
+}
+
+.header {
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header a{
+    text-decoration: none;
+    color: var(--color-2);
+    font-family: "Lato-Bold";
+}
+
+h1{
+    font-size: 20px;
+    color: var(--color-2);
+    font-family: "Lato-Bold";
+}

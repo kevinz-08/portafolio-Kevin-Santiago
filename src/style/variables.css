@@ -1,0 +1,33 @@
+:root {
+    --color-1: #FD6F00;
+    --color-2: #959595;
+    /* COLORES LINEAL GRADIENT */
+    --color-3: #984300;
+    --colot-4: #FD6F00;
+    --color-5: #CA5900;
+    /* FIN DE COLORES LINEAL GRADIENT */
+    --color-6: #707070;
+    --color-7: #FEFEFE;
+    --color-8: #121212;
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url(../fonts/Lato-Black.ttf);
+}
+@font-face {
+    font-family: "Lato-bold";
+    src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: "Lato-ExtraBold";
+    src: url(../fonts/Lato-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Lato-Medium";
+    src: url(../fonts/Lato-Medium.ttf);
+}
+@font-face {
+    font-family: "Lato-Semi-Bold";
+    src: url(../fonts/Lato-SemiBold.ttf);
+}
