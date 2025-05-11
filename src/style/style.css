@@ -124,3 +124,47 @@ body {
     border-bottom: none;
   }
 }
+main {
+  margin-top: 60px;
+  padding: 20px;
+}
+main .portada-box {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+main .text-box {
+  margin-top: 105px;
+  display: flex;
+}
+
+main .box1 .content p {
+  color: var(--color-6);
+  font-size: 24px;
+  font-family: "Lato-Semi-Bold";
+}
+
+main .box1 .content h1 {
+  color: var(--color-2);
+  font-size: 28px;
+  font-family: "Lato-Bold";
+}
+
+main .box1 .fullstack-developer {
+  font-family: "Lato-Black";
+  font-size: 30px;
+  background: linear-gradient(#984300, #FD6F00, #CA5900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main .portada-box .links-social {
+  display: flex;
+}
+main .portada-box .links-social i {
+  color: var(--color-2);
+  background-color: var(--color-9);
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
