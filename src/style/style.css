@@ -9,133 +9,118 @@ body {
     background-color: var(--color-8);
 }
 .main-header {
-    background-color: var(--color-8);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-  }
-
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 20px;
-  }
-
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo img {
-    height: 40px;
-    /* Añade una imagen de placeholder */
-    background-color: #ddd; 
-    width: 120px;
-  }
-
+  background-color: var(--color-8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 40px;
+  /* Añade una imagen de placeholder */
+  width: 120px;
+}
+.menu-toggle {
+  display: none; /* Oculto en PC */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+/* Enlaces de navegación en PC */
+.links {
+  display: flex;
+  gap: 20px; /* Espacio entre enlaces */
+  margin-right: 20px; /* Espacio entre los enlaces y el botón de contacto */
+}
+.links a {
+  font-family: "Lato-Bold";
+  color: var(--color-6);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  padding: 5px 0;
+  position: relative;
+}
+.links a:hover {
+  color: var(--color-3);
+}
+.links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-1);
+  transition: width 0.3s;
+}
+.links a:hover::after {
+  width: 100%;
+}
+/* Botón de contacto */
+.btn-hire-me a {
+  font-family: "Lato-Bold";
+  background: linear-gradient(#984300, #FD6F00, #CA5900);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+.btn-hire-me a:hover {
+  background-color: #0056b3;
+}
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
   .menu-toggle {
-    display: none; /* Oculto en PC */
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
+    display: block;
   }
-
-  /* Enlaces de navegación en PC */
+  .header-content {
+    flex-wrap: wrap;
+  }
   .links {
-    display: flex;
-    gap: 20px; /* Espacio entre enlaces */
-    margin-right: 20px; /* Espacio entre los enlaces y el botón de contacto */
-  }
-
-  .links a {
-    color: var(--color-6);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-    padding: 5px 0;
-    position: relative;
-  }
-
-  .links a:hover {
-    color: #007bff;
-  }
-
-  .links a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #007bff;
-    transition: width 0.3s;
-  }
-
-  .links a:hover::after {
+    flex-direction: column;
     width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    order: 3;
+    gap: 10px;
+    margin-top: 0;
   }
-
-  /* Botón de contacto */
-  .btn-hire-me a {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  .links.active {
+    max-height: 300px;
+    margin-top: 15px;
   }
-
-  .btn-hire-me a:hover {
-    background-color: #0056b3;
+  .btn-hire-me {
+    /* Mantener el botón visible siempre */
+    margin-left: auto;
   }
-
-  /* Media query para dispositivos móviles */
-  @media screen and (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
-
-    .header-content {
-      flex-wrap: wrap;
-    }
-
-    .links {
-      flex-direction: column;
-      width: 100%;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s ease;
-      order: 3;
-      gap: 10px;
-      margin-top: 0;
-    }
-
-    .links.active {
-      max-height: 300px;
-      margin-top: 15px;
-    }
-
-    .btn-hire-me {
-      /* Mantener el botón visible siempre */
-      margin-left: auto;
-    }
-    
-    .links a {
-      padding: 10px 0;
-      border-bottom: 1px solid #eee;
-    }
-    
-    .links a:last-child {
-      border-bottom: none;
-    }
-  } 
+  
+  .links a {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .links a:last-child {
+    border-bottom: none;
+  }
+}
