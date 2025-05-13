@@ -124,17 +124,21 @@ body {
     border-bottom: none;
   }
 }
+
+/* ****************************** MAIN **************************** */
 main {
   margin-top: 60px;
   padding: 20px;
 }
 main .portada-box {
+  display: flex;
   margin-left: 80px;
   margin-right: 80px;
 }
 main .text-box {
   margin-top: 105px;
   display: flex;
+  flex-direction: column;
 }
 
 main .box1 .content p {
@@ -167,4 +171,67 @@ main .portada-box .links-social i {
   width: 40px;
   height: 40px;
   border-radius: 20px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+main .buttons {
+  display: flex;
+  gap: 20px;
+}
+main .buttons button{
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 40px;
+  font-family: "Lato-Bold";
+}
+main .buttons .hire-me {
+  border: none;
+  background: linear-gradient(#FD6F00, #E46400);  
+}
+main .buttons .cv {
+  background-color: transparent;
+  color: var(--color-2);
+  border-color: var(--color-2);
+}
+main .stats-box {
+  width: 534px;
+  height: 125px;
+  background-color: var(--color-10);
+  display: flex;
+  margin-top: 40px;
+  font-family: "Lato-Bold";
+  border-radius: 8px;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 30px;
+}
+main .stats-box .experience {
+  margin-left: 24px;
+  border-right: 2px var(--color-2) solid;
+}
+main .stats-box .project {
+  border-right: 2px var(--color-2) solid;
+}
+main .stats-box .experience, .project, .clients {
+  width: 144px;
+  height: 77px;
+  margin-top: 24px;
+}
+
+main .stats-box h1{
+  color: #FD6F00;
+  font-size: 24px;
+}
+
+main .stats-box p {
+  margin-top: 12px;
+  color: white;
+  font-size: 15px;
+}
+
+main .photo-box {
+  margin-left: 200px;
+  background-color: var(--color-10);
+  border-radius: 1000px;
 }
