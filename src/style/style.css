@@ -74,20 +74,38 @@ body {
   width: 100%;
 }
 /* Botón de contacto */
-.btn-hire-me a {
-  font-family: "Lato-Bold";
-  background: linear-gradient(#984300, #FD6F00, #CA5900);
+.btn-contact {
+  font-family: "Lato-Bold", sans-serif;
+  background: linear-gradient(135deg, #984300, #FD6F00, #CA5900);
   color: white;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s;
-  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
 }
-.btn-hire-me a:hover {
-  background-color: #0056b3;
+.btn-contact:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(253, 111, 0, 0.5);
+  animation: pulse 0.6s ease forwards;
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .menu-toggle {
@@ -174,26 +192,82 @@ main .portada-box .links-social i {
   margin-top: 30px;
   margin-right: 30px;
 }
+
+/********* Botones hire me y contact me *********/
 main .buttons {
   display: flex;
   gap: 20px;
 }
-main .buttons button{
+main .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+main .buttons button {
   width: 150px;
   height: 40px;
   border-radius: 8px;
   margin-top: 40px;
-  font-family: "Lato-Bold";
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
+
+/* ****** Boton hire me ******** */
 main .buttons .hire-me {
   border: none;
-  background: linear-gradient(#FD6F00, #E46400);  
+  color: white;
+  background: linear-gradient(135deg, #FD6F00, #E46400);
 }
+
+main .buttons .hire-me:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(253, 111, 0, 0.5);
+  animation: pulse 0.6s ease forwards;
+}
+
+/* ***** Boton CV ******* */
 main .buttons .cv {
   background-color: transparent;
-  color: var(--color-2);
-  border-color: var(--color-2);
+  color: white;
+  border: 2px solid var(--color-2);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 150px;
+  border-radius: 8px;
+  font-family: "Lato-Bold", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
+
+main .buttons .cv:hover {
+  transform: scale(1.08);
+  background-color: var(--color-2);
+  color: white;
+  animation: pulse 0.6s ease forwards;
+}
+
+/* Animación de pulso (común a ambos botones) */
+@keyframes pulse {
+  0% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
+
+
 main .stats-box {
   width: 534px;
   height: 125px;
@@ -531,3 +605,125 @@ main .photo-box {
   }
 }
 
+/* ******************** Services ********************************* */
+
+main .services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+main .services .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+main .services .text h1{
+    font-size: 40px;
+    font-family: "Lato-Bold";
+    color: white;
+}
+main .services .text p {
+  font-size: 20px;
+  font-family: "Lato-Medium";
+  color: var(--color-6);
+}
+
+main .services .boxes .father-box1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  gap: 40px;
+  
+}
+
+main .services .box1, .box2, .box3 {
+  background-color: var(--color-10);
+}
+
+main .services .box1, .box2, .box3 {
+  padding: 34px;
+  width: 350px;
+  height: 400px;
+  border-radius: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .services .box1 i {
+  color: var(--color-1);
+  font-size: 70px;    
+}
+main .services .box2 i {
+  color: var(--color-1);
+  font-size: 70px;
+}
+main .services .box3 i {
+  color: var(--color-1);
+  font-size: 70px;
+}
+
+main .services .box1 p{
+  color: var(--color-11);
+  font-size: 20px;
+  font-family: "Lato-medium";
+}
+main .services .box2 p {
+  color: var(--color-11);
+  font-size: 20px;
+  font-family: "Lato-medium";
+}
+main .services .box3 p {
+  color: var(--color-11);
+  font-size: 20px;
+  font-family: "Lato-medium";
+}
+
+main .services .boxes h1{
+  font-family: "Lato-Bold";
+  color: var(--color-1);
+  font-size: 24px;
+}
+
+main .services .icon-and-tittle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-repo {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(#984300, #FD6F00, #CA5900);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Lato-Bold";
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.btn-repo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px var(--color-3);
+}
+.btn-repo:hover {
+  animation: pulse 0.6s ease forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1.08);
+  }
+}
