@@ -730,3 +730,27 @@ main .services .icon-and-tittle {
     transform: scale(1.08);
   }
 }
+
+
+
+
+/* ************************************** infinite slider *********************************** */
+
+.slider {
+  width: 100%;
+  border: 1px solid red;
+  height: var(--height);
+}
+
+.slider .list {
+  display: flex;
+}
+
+.slider .list .item {
+  width: var(--width);
+  height: var(--height);
+}
+
+.slider .list .item img {
+  width: 100%;
+}
