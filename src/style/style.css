@@ -1031,6 +1031,13 @@ main .services .icon-and-tittle {
 
 
 /* ************************************** infinite slider *********************************** */
+.main h1{
+  text-align: center;
+  color: white;
+  font-family: "Lato-Bold";
+  font-weight: 600;
+  margin-bottom: 50px;
+}
 
 .main {
   width: min(1200px, 90vw);
