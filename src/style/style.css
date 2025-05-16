@@ -764,8 +764,8 @@ main .services .icon-and-tittle {
   main .services .box1,
   main .services .box2,
   main .services .box3 {
-    width: 400px;
-    height: 450px;
+    width: 450px;
+    height: 500px;
     padding: 40px;
   }
   
@@ -786,7 +786,7 @@ main .services .icon-and-tittle {
   }
   
   .btn-repo {
-    padding: 12px 24px;
+    padding: 10px 20px;
     font-size: 18px;
   }
 }
@@ -857,7 +857,7 @@ main .services .icon-and-tittle {
   main .services .box2,
   main .services .box3 {
     width: 300px;
-    height: 380px;
+    height: 400px;
     padding: 30px;
   }
   
