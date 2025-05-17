@@ -1116,69 +1116,6 @@ main .services .icon-and-tittle {
 
 /* **************** about me ******************** */
 
-/* main .about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.about-me .titte-description {
-  max-width: 800px;
-  height: 100%;
-}
-.about-me .titte-description h1 {
-  font-size: 40px;
-  text-align: center;
-  color: white;
-  font-family: "Lato-Bold";
-}
-.about-me .titte-description p {
-  font-size: 20px;
-  text-align: center;
-  color: var(--color-6);
-  font-family: "Lato-Medium";
-}
-main .image-text {
-  margin-top: 40px;
-  display: flex;
-}
-main .image-text p {
-  width: 630px;
-  height: auto;
-  font-size: 20 px;
-  text-align:left;
-  color: var(--color-6);
-  font-family: "Lato-Medium";
-}
-main .text-and-btn a{
-  margin-top: 40px;
-} */
-/* .image {
-  position: relative;
-  width: 400px;
-  height: 600px;
-  overflow: hidden;
-}
-
-.background-arch {
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  background-color: var(--color-10);
-  border-radius: 50% / 40%;
-  top: 20%;
-  left: 0;
-  z-index: 0;
-}
-
-.image img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-} */
-
 main .about-me {
   margin-top: 200px;
   display: flex;
