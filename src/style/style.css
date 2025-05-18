@@ -1,12 +1,12 @@
 @import url(variables.css);
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--color-8);
+  background-color: var(--color-8);
 }
 html {
   scroll-behavior: smooth;
@@ -64,7 +64,7 @@ html {
   color: var(--color-3);
 }
 .links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -79,7 +79,7 @@ html {
 /* Botón de contacto */
 .btn-contact {
   font-family: "Lato-Bold", sans-serif;
-  background: linear-gradient(135deg, #984300, #FD6F00, #CA5900);
+  background: linear-gradient(135deg, #984300, #fd6f00, #ca5900);
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -108,7 +108,6 @@ html {
   }
 }
 
-
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .menu-toggle {
@@ -135,12 +134,12 @@ html {
     /* Mantener el botón visible siempre */
     margin-left: auto;
   }
-  
+
   .links a {
     padding: 10px 0;
     border-bottom: 1px solid #eee;
   }
-  
+
   .links a:last-child {
     border-bottom: none;
   }
@@ -180,7 +179,7 @@ main .box1 .content h1 {
 main .box1 .fullstack-developer {
   font-family: "Lato-Black";
   font-size: 30px;
-  background: linear-gradient(#984300, #FD6F00, #CA5900);
+  background: linear-gradient(#984300, #fd6f00, #ca5900);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -225,7 +224,7 @@ main .buttons button {
 main .buttons .hire-me {
   border: none;
   color: white;
-  background: linear-gradient(135deg, #FD6F00, #E46400);
+  background: linear-gradient(135deg, #fd6f00, #e46400);
 }
 
 main .buttons .hire-me:hover {
@@ -273,7 +272,6 @@ main .buttons .cv:hover {
   }
 }
 
-
 main .stats-box {
   width: 534px;
   height: 125px;
@@ -293,14 +291,16 @@ main .stats-box .experience {
 main .stats-box .project {
   border-right: 2px var(--color-2) solid;
 }
-main .stats-box .experience, .project, .clients {
+main .stats-box .experience,
+.project,
+.clients {
   width: 144px;
   height: 77px;
   margin-top: 24px;
 }
 
-main .stats-box h1{
-  color: #FD6F00;
+main .stats-box h1 {
+  color: #fd6f00;
   font-size: 24px;
 }
 
@@ -317,8 +317,6 @@ main .photo-box {
 }
 /* ********************** diseño responsive ********************** */
 
-
-
 /* Pantallas extra grandes (más de 1800px) - Monitores de 27 pulgadas y más grandes */
 @media only screen and (min-width: 1801px) {
   main {
@@ -334,64 +332,64 @@ main .photo-box {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   main .text-box {
     margin-top: 120px;
     max-width: 50%;
   }
-  
+
   main .box1 .content p {
     font-size: 30px;
   }
-  
+
   main .box1 .content h1 {
     font-size: 40px;
   }
-  
+
   main .box1 .fullstack-developer {
     font-size: 42px;
   }
-  
+
   main .portada-box .links-social i {
     font-size: 36px;
     width: 50px;
     height: 50px;
     border-radius: 25px;
   }
-  
+
   main .buttons button {
     width: 180px;
     height: 50px;
     font-size: 18px;
   }
-  
+
   main .stats-box {
     width: 700px;
     height: 150px;
   }
-  
+
   main .stats-box .experience,
   main .stats-box .project,
   main .stats-box .clients {
     width: 180px;
     height: 100px;
   }
-  
+
   main .stats-box h1 {
     font-size: 32px;
   }
-  
+
   main .stats-box p {
     font-size: 18px;
   }
-  
+
   main .photo-box {
     margin-left: 0;
     width: 45%;
     display: flex;
     justify-content: center;
   }
-  
+
   main .photo-box img {
     max-width: 90%;
     max-height: 600px;
@@ -409,36 +407,36 @@ main .photo-box {
     margin-right: 100px;
     justify-content: space-between;
   }
-  
+
   main .text-box {
     margin-top: 110px;
     width: 50%;
   }
-  
+
   main .box1 .content p {
     font-size: 26px;
   }
-  
+
   main .box1 .content h1 {
     font-size: 32px;
   }
-  
+
   main .box1 .fullstack-developer {
     font-size: 34px;
   }
-  
+
   main .photo-box {
     margin-left: 50px;
     width: 40%;
     display: flex;
     justify-content: center;
   }
-  
+
   main .stats-box {
     width: 600px;
     height: 140px;
   }
-  
+
   main .stats-box h1 {
     font-size: 28px;
   }
@@ -451,12 +449,12 @@ main .photo-box {
     margin-right: 80px;
     justify-content: space-between;
   }
-  
+
   main .photo-box {
     margin-left: 120px;
     width: 40%;
   }
-  
+
   main .stats-box {
     width: 100%;
     max-width: 560px;
@@ -469,11 +467,11 @@ main .photo-box {
     margin-left: 40px;
     margin-right: 40px;
   }
-  
+
   main .photo-box {
     margin-left: 80px;
   }
-  
+
   main .stats-box {
     width: 100%;
     max-width: 534px;
@@ -488,28 +486,28 @@ main .photo-box {
     margin-right: 20px;
     align-items: center;
   }
-  
+
   main .text-box {
     margin-top: 40px;
     width: 100%;
     align-items: center;
     text-align: center;
   }
-  
+
   main .photo-box {
     margin-left: 0;
     margin-top: 40px;
   }
-  
+
   main .stats-box {
     width: 100%;
     max-width: 534px;
   }
-  
+
   main .buttons {
     justify-content: center;
   }
-  
+
   main .portada-box .links-social {
     justify-content: center;
   }
@@ -521,31 +519,31 @@ main .photo-box {
     margin-top: 30px;
     padding: 10px;
   }
-  
+
   main .portada-box {
     margin-left: 10px;
     margin-right: 10px;
   }
-  
+
   main .box1 .content p {
     font-size: 20px;
   }
-  
+
   main .box1 .content h1 {
     font-size: 24px;
   }
-  
+
   main .box1 .fullstack-developer {
     font-size: 24px;
   }
-  
+
   main .stats-box {
     flex-direction: column;
     height: auto;
     gap: 15px;
     padding: 15px 0;
   }
-  
+
   main .stats-box .experience,
   main .stats-box .project,
   main .stats-box .clients {
@@ -555,29 +553,29 @@ main .photo-box {
     border-right: none;
     text-align: center;
   }
-  
+
   main .stats-box .experience {
     margin-left: 0;
     border-bottom: 2px var(--color-2) solid;
     padding-bottom: 10px;
   }
-  
+
   main .stats-box .project {
     border-bottom: 2px var(--color-2) solid;
     padding-bottom: 10px;
   }
-  
+
   main .buttons {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
-  
+
   main .buttons button {
     width: 90%;
     max-width: 200px;
   }
-    main .photo-box {
+  main .photo-box {
     border-radius: 70px;
   }
   main .photo-box img {
@@ -597,15 +595,15 @@ main .photo-box {
     height: 35px;
     margin-right: 15px;
   }
-  
+
   main .box1 .content p {
     font-size: 18px;
   }
-  
+
   main .box1 .content h1 {
     font-size: 22px;
   }
-  
+
   main .box1 .fullstack-developer {
     font-size: 22px;
   }
@@ -716,13 +714,14 @@ main .services .icon-and-tittle {
 .btn-repo {
   padding: 10px 20px;
   border-radius: 8px;
-  background: linear-gradient(#984300, #FD6F00, #CA5900);
+  background: linear-gradient(#984300, #fd6f00, #ca5900);
   color: white;
   text-decoration: none;
   text-align: center;
   font-family: "Lato-Bold";
   font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .btn-repo:hover {
@@ -751,19 +750,19 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 200px;
   }
-  
+
   main .services .text h1 {
     font-size: 48px;
   }
-  
+
   main .services .text p {
     font-size: 24px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 60px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -771,23 +770,23 @@ main .services .icon-and-tittle {
     height: 500px;
     padding: 40px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 80px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 28px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
     font-size: 22px;
   }
-  
+
   .btn-repo {
     padding: 10px 20px;
     font-size: 18px;
@@ -799,19 +798,19 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 180px;
   }
-  
+
   main .services .text h1 {
     font-size: 44px;
   }
-  
+
   main .services .text p {
     font-size: 22px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 50px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -825,11 +824,11 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 160px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 30px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -843,19 +842,19 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 140px;
   }
-  
+
   main .services .text h1 {
     font-size: 36px;
   }
-  
+
   main .services .text p {
     font-size: 18px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 20px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -863,17 +862,17 @@ main .services .icon-and-tittle {
     height: 400px;
     padding: 30px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 60px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 22px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
@@ -886,20 +885,20 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 120px;
   }
-  
+
   main .services .text h1 {
     font-size: 32px;
   }
-  
+
   main .services .text p {
     font-size: 17px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 30px;
     margin-top: 60px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -907,23 +906,23 @@ main .services .icon-and-tittle {
     height: 360px;
     padding: 25px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 55px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 20px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
     font-size: 16px;
   }
-  
+
   .btn-repo {
     padding: 10px 18px;
     font-size: 14px;
@@ -935,22 +934,22 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 100px;
   }
-  
+
   main .services .text h1 {
     font-size: 28px;
   }
-  
+
   main .services .text p {
     font-size: 16px;
   }
-  
+
   main .services .boxes .father-box1 {
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin-top: 50px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -960,17 +959,17 @@ main .services .icon-and-tittle {
     min-height: 350px;
     padding: 25px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 50px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 20px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
@@ -984,22 +983,22 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 80px;
   }
-  
+
   main .services .text h1 {
     font-size: 26px;
   }
-  
+
   main .services .text p {
     font-size: 15px;
   }
-  
+
   main .services .boxes .father-box1 {
     flex-direction: column;
     align-items: center;
     gap: 25px;
     margin-top: 40px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -1008,33 +1007,32 @@ main .services .icon-and-tittle {
     min-height: 320px;
     padding: 20px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 45px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 18px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
     font-size: 15px;
     margin-bottom: 12px;
   }
-  
+
   .btn-repo {
     padding: 8px 16px;
     font-size: 14px;
   }
 }
 
-
 /* ************************************** infinite slider *********************************** */
-.main h1{
+.main h1 {
   text-align: center;
   color: white;
   font-family: "Lato-Bold";
@@ -1070,7 +1068,9 @@ main .services .icon-and-tittle {
   position: absolute;
   left: 100%;
   animation: autoRun 10s linear infinite;
-  animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) - 10s) !important;
+  animation-delay: calc(
+    (10s / var(--quantity)) * (var(--position) - 1) - 10s
+  ) !important;
 }
 
 .slider .item img {
