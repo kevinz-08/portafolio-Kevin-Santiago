@@ -151,6 +151,9 @@ main {
   margin-top: 60px;
   padding: 20px;
 }
+#home {
+  scroll-margin: 70px;
+}
 main .portada-box {
   display: flex;
   margin-left: 80px;
@@ -1166,7 +1169,7 @@ main .text-and-btn a {
   margin-top: 10px;
 }
 
-/* ESTILO DE LA IMAGEN CON ARCO */
+/******************* modelado de el fondo de la imagen ****************/
 .image {
   position: relative;
   width: 320px;
@@ -1182,7 +1185,7 @@ main .text-and-btn a {
 
 .background-arch {
   position: absolute;
-  top: 18%; /* Ajusta este valor según lo alto que quieras el arco */
+  top: 18%;
   left: 0;
   width: 100%;
   height: 70%;
