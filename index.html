@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/style/style.css">
     <link rel="stylesheet" href="src/style/variable.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 <body>
     <div class="main-header">
@@ -36,7 +37,7 @@
       </div>
     <script src="main.js"></script>
     <main id="home">
-      <div class="portada-box" >
+      <div class="portada-box" data-aos="fade-up">
         <div class="text-box">
           <div class="general-information">
             <div class="box1">
@@ -62,7 +63,7 @@
               </div>
             </div>
           </div>
-          <div class="stats-box">
+          <div class="stats-box" data-aos="fade-up">
             <div class="experience">
               <h1>3+</h1>
               <p>Experiences</p>
@@ -77,7 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="photo-box">
+        <div class="photo-box" data-aos="fade-left">
           <img src="src/img/img-pfp1-removebg.png" alt="">
         </div>
       </div>
@@ -89,7 +90,7 @@
         </div>
 
 
-        <div class="boxes">
+        <div class="boxes" data-aos="zoom-in-up">
           <div class="father-box1">
             <div class="box1">
               <div class="icon-and-tittle">
@@ -126,13 +127,13 @@
         </div>
       </div>
       <div class="main">
-        <h1>Tecnologias y Lenguajes</h1>
+        <h1 data-aos="fade-right">Tecnologias y Lenguajes</h1>
         <div class="slider" style="
           --width: 100px;
           --height: 100px;
           --quantity: 10;
         ">
-          <div class="list">
+          <div class="list" data-aos="fade-up">
             <div class="item" style="--position: 1;"><a href="https://lenguajecss.com/" target="_blank"><img src="src/img/slider1-1.png" alt=""></a></div>
             <div class="item" style="--position: 2;"><a href="https://lenguajecss.com/" target="_blank"><img src="src/img/slider1-2.png" alt=""></a></div>
             <div class="item" style="--position: 3;"><a href="https://lenguajejs.com/javascript/" target="_blank"><img src="src/img/slider1-3.png" alt=""></a></div>
@@ -155,11 +156,11 @@
               la lógica backend y el diseño visual. Siempre aprendiendo, siempre creando.</p>
         </div>
         <div class="image-text">
-          <div class="image"> 
+          <div class="image" data-aos="fade-right"> 
             <div class="background-arch"></div>
             <img src="src/img/img-pfp1-removebg.png" alt="">
           </div>
-          <div class="text-and-btn">
+          <div class="text-and-btn" data-aos="fade-left">
               <p>
               Técnico en Desarrollo de Software con formación práctica en el SENA y
                 actualmente en entrenamiento intensivo en CampusLands. Cuento con
@@ -181,5 +182,14 @@
         </div>
       </div>
     </main>
-</body>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // duración de la animación en ms
+    once: true,     // la animación se hace solo una vez
+  });
+</script>
+  </body>
 </html>
