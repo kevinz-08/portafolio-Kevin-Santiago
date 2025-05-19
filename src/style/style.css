@@ -1753,6 +1753,7 @@ input[type="submit"] {
 
 /* *************** footer ******************* */
 .footer {
+  margin-top: 200px;
   background-color: var(--color-8);
   color: var(--color-7);
   padding: 40px 20px 20px;
