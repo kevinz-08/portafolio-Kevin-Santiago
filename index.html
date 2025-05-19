@@ -192,27 +192,39 @@
       </div>
 
       <!-- fomulario -->
-       <div class="form-box" id="contact-me">
+      <div class="form-box" id="contact-me">
         <div class="tittle-description">
           <h1>Contact Me</h1>
           <p>Cultivating Connections: Reach Out and Connect with Me</p>
         </div>
         <form action="">
-          <label for="Nombre">Nombre</label>
-          <input type="text" name="name">
+          <div class="form-left">
+            <div class="nombre">
+              <label for="Nombre">Nombre</label>
+              <input type="text" name="name" placeholder="Name">
+            </div>
+          
+            <div class="email">
+              <label for="email">Correo Electronico</label>
+              <input type="email" name="email" placeholder="Email">
+            </div>
+          
+            <div class="asunto">
+              <label for="subject">Asunto</label>
+              <input type="text" name="subject" placeholder="Asunto">
+            </div>
+          </div>
 
-          <label for="email">Correo Electronico</label>
-          <input type="email">
+          <div class="form-right">
+            <div class="comentarios">
+              <label for="comments">Comentarios</label>
+              <textarea name="comments" cols="15" rows="5"></textarea>
+            </div>
+          </div>
 
-          <label for="subject">Asunto</label>
-          <input type="text" name="subject">
-
-          <label for="comments">Comentarios</label>
-          <textarea name="comments" cols="15" rows="5"></textarea>
-
-          <input type="submit" value="enviar">
+          <input type="submit" value="Enviar" class="btn-repo">
         </form>
-       </div>
+      </div>
     </main>
 
 
