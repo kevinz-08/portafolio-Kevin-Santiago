@@ -1032,6 +1032,9 @@ main .services .icon-and-tittle {
 }
 
 /* ************************************** infinite slider *********************************** */
+#technologies {
+  scroll-margin: 150px;
+}
 .main h1 {
   text-align: center;
   color: white;
@@ -1192,4 +1195,50 @@ main .text-and-btn a {
   background-color: var(--color-10);
   border-radius: 50% / 25%;
   z-index: 0;
+}
+
+.theme-btn {
+  background: none;
+  border: none;
+  color: var(--color-6);
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.theme-btn{
+  margin-left: 40px;
+}
+.theme-btn:hover {
+  color: var(--color-1);
+}
+
+body,
+.main-header,
+header,
+main,
+section,
+button,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }

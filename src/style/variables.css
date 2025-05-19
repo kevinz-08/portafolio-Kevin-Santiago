@@ -1,17 +1,46 @@
-:root {
+/* :root {
     --color-1: #FD6F00;
-    --color-2: #959595;
+    --color-2: #959595; */
     /* COLORES LINEAL GRADIENT */
-    --color-3: #984300;
+    /* --color-3: #984300;
     --colot-4: #FD6F00;
-    --color-5: #CA5900;
+    --color-5: #CA5900; */
     /* FIN DE COLORES LINEAL GRADIENT */
-    --color-6: #707070;
+    /* --color-6: #707070;
     --color-7: #FEFEFE;
     --color-8: #121212;
     --color-9: #76767610;
     --color-10: #1E1E1E;
     --color-11: #575757;
+} */
+
+:root {
+  --color-1: #FD6F00;
+  --color-2: #121212;
+  --color-3: #984300;
+  --colot-4: #FD6F00;
+  --color-5: #CA5900;
+  --color-6: #333;
+  --color-7: #000;
+  --color-8: #f5f5f5; /* fondo claro */
+  --color-9: #cccccc10;
+  --color-10: #ffffff;
+  --color-11: #575757;
+}
+
+/* Tema oscuro */
+.dark-theme {
+  --color-1: #FD6F00;
+  --color-2: #959595;
+  --color-3: #984300;
+  --colot-4: #FD6F00;
+  --color-5: #CA5900;
+  --color-6: #707070;
+  --color-7: #FEFEFE;
+  --color-8: #121212;
+  --color-9: #76767610;
+  --color-10: #1E1E1E;
+  --color-11: #575757;
 }
 
 @font-face {
