@@ -45,7 +45,7 @@ html {
   cursor: pointer;
   color: #333;
 }
-/* Enlaces de navegación en PC */
+/* Enlaces de navegacion en PC */
 .links {
   display: flex;
   gap: 20px; /* Espacio entre enlaces */
@@ -317,8 +317,6 @@ main .stats-box {
   margin-top: 40px;
   font-family: "Lato-Bold";
   border-radius: 8px;
-  /* align-items: center;
-  justify-content: center; */
   gap: 30px;
 }
 main .stats-box .experience {
@@ -337,7 +335,7 @@ main .stats-box .experience,
 }
 
 main .stats-box h1 {
-  color: var(--color-4);
+  color: var(--color-7);
   font-size: 24px;
 }
 

@@ -20,10 +20,10 @@ document.addEventListener("scroll", () => {
     if (isSectionVisible(section)) {
       if (!activeSections.has(id)) {
         activeSections.add(id);
-        AOS.refreshHard(); // 🔁 Refresca las animaciones al entrar de nuevo
+        AOS.refreshHard(); // refresca las animaciones al entrar de nuevo
       }
     } else {
-      activeSections.delete(id); // 💡 Permite volver a activar al entrar de nuevo
+      activeSections.delete(id); // permite volver a activar al entrar de nuevo
     }
   });
 });
