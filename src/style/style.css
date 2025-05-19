@@ -1548,15 +1548,17 @@ main .text-and-btn a {
 .form-box {
   margin-top: 150px;
   width: auto;
-  height: 550px;
+  height: auto;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
   /* justify-content: center; */
 }
 .form-box .tittle-description {
-  width: 547px;
+  width: 100%;
+  max-width: 547px;
   height: auto;
 }
 .form-box h1 {
@@ -1573,12 +1575,15 @@ main .text-and-btn a {
 
 .form-box form {
   margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1015px;
+  width: 100%;
   color: var(--color-6);
   font-family: "Lato-Medium";
   font-weight: 600;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
 }
 .form-box input {
   background-color: var(--color-10);
