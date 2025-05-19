@@ -14,7 +14,7 @@
     --color-11: #575757;
 } */
 
-:root {
+:root { /* tema claro */
   --color-1: #FD6F00;
   --color-2: #121212;
   --color-3: #984300;
@@ -22,7 +22,7 @@
   --color-5: #CA5900;
   --color-6: #333;
   --color-7: #000;
-  --color-8: #f5f5f5; /* fondo claro */
+  --color-8: #f5f5f5;
   --color-9: #cccccc10;
   --color-10: #ffffff;
   --color-11: #575757;
