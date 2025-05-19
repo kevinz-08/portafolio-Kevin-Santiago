@@ -1545,6 +1545,9 @@ main .text-and-btn a {
 }
 
 /* ********* formulario ********** */
+#contact-me {
+  scroll-margin: 75px;
+}
 .form-box {
   margin-top: 150px;
   width: auto;
