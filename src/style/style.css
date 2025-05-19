@@ -1544,8 +1544,21 @@ main .text-and-btn a {
   }
 }
 
-
-
+/* ********* formulario ********** */
+.form-box {
+  margin-top: 150px;
+  width: 1015px;
+  height: 550px;
+  text-align: center;
+}
+.form-box h1 {
+  color: var(--color-7);
+  font-family: "Lato-Bold";
+}
+.form-box p {
+  color: var(--color-6);
+  font-family: "Lato-Medium";
+}
 
 
 
