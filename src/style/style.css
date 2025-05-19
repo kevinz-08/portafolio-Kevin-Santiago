@@ -1547,12 +1547,13 @@ main .text-and-btn a {
 /* ********* formulario ********** */
 .form-box {
   margin-top: 150px;
-  width: 1015px;
+  width: auto;
   height: 550px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
 }
 .form-box .tittle-description {
   width: 547px;
