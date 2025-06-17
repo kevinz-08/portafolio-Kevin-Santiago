@@ -270,11 +270,11 @@ main .box1 .content h1 {
   font-family: "Lato-Bold";
 }
 
-main .box1 .fullstack-developer {
+main .box1 .typewriter {
   font-family: "Lato-Black";
-  font-size: 30px;
+  font-size: 50px;
   background: linear-gradient(#984300, #fd6f00, #ca5900);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -1828,8 +1828,6 @@ input[type="submit"] {
   border-top: 1px solid var(--color-9);
   padding-top: 15px;
 }
-
-
 
 
 .theme-btn{
