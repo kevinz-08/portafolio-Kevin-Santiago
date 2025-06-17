@@ -28,6 +28,9 @@ document.addEventListener("scroll", () => {
   });
 });
 
+
+/* * Efecto de escritura y borrado de texto */
+
 const texts = ["Backend Developer", "Frontend Developer", "Fullstack Developer"];
 let currentIndex = 0;
 let i = 0;

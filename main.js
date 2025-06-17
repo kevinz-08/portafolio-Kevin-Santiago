@@ -18,3 +18,11 @@
      document.getElementById('navMenu').classList.remove('active');
    }
  });
+
+/* funcion para enviar un gmail a mi correo */
+function enviarCorreo() {
+  const correo = "kevingadev@gmail.com";
+  const asunto = "Consulta desde el portafolio web";
+  const cuerpo = "Hola Kevin, me gustaria contactarme contigo para una posible oportunidad, consulta, diagnostico, etc.";
+  window.location.href = `mailto:${correo}?subject=${encodeURIComponent(asunto)}&body=${cuerpo}`;
+}
