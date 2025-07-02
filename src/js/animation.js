@@ -69,3 +69,23 @@ function typeWriter() {
 }
 
 typeWriter();
+
+function applyParallax() {
+  const scrollY = window.scrollY;
+
+  const title = document.querySelector(".parallax-text");
+  const screenWidth = window.innerWidth;
+
+  // Solo aplicar parallax si el ancho es mayor a 768px (no en móviles)
+  if (screenWidth > 768) {
+    title.style.transform = `translateY(${scrollY * 0.4}px)`;
+    title.style.opacity = 1 - scrollY / 400;
+  } else {
+    // Reset en móviles para evitar el bug
+    title.style.transform = "translateY(0)";
+    title.style.opacity = 1;
+  }
+}
+
+window.addEventListener("scroll", applyParallax);
+window.addEventListener("resize", applyParallax);
