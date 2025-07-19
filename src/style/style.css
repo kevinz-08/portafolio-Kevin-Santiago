@@ -281,19 +281,6 @@ html {
     background-position: 60% center; /* más hacia la derecha si la imagen se corta mucho */
   }
 }
-/* .parallax-text {
-  font-size: clamp(24px, 6vw, 60px);
-  font-weight: 800;
-  text-align: center;
-  background: linear-gradient(135deg, #444444, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  will-change: transform, opacity;
-  padding: 0 20px;
-} */
-
 
 main {
   margin-top: 60px;
