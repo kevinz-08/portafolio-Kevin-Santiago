@@ -266,7 +266,6 @@ html {
 .kevin-image h1 {
   color: #efefef; 
   font-family: "Lato-Bold", sans-serif;
-  font-size: 100px;
   z-index: 1;
   position: relative;
 }
@@ -275,6 +274,9 @@ html {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 @media (max-width: 768px) {
+  .kevin-image {
+    font-size: 25px;
+  }
   .hero-section {
     background-position: 60% center; /* más hacia la derecha si la imagen se corta mucho */
   }
