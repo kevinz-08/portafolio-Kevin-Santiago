@@ -61,19 +61,18 @@ Bienvenido a mi portafolio personal. Este proyecto fue desarrollado con el prop�
 git clone https://kevinz-08.github.io/portafolio-Kevin-Santiago/
 Abre el archivo index.html en tu navegador favorito.
 ```
-📬 Contacto
+## 📬 Contacto
 ¿Quieres hablar sobre un proyecto o colaborar?
 
-📧 kevingadev@gmail.com
+- 📧 kevingadev@gmail.com
 
-💼 LinkedIn
+## 💼 LinkedIn
+- 🔗 [Ver Linkedin](https://www.linkedin.com/in/kevingutierrezdev/)
 
-🌐 Mi Sitio Web
+## 📝 Licencia
+- Este proyecto está licenciado bajo la licencia MIT. Siéntete libre de utilizarlo como base para tu propio portafolio.
 
-📝 Licencia
-Este proyecto está licenciado bajo la licencia MIT. Siéntete libre de utilizarlo como base para tu propio portafolio.
+## ❤️ Agradecimientos
+- Gracias por visitar mi portafolio. Siempre estoy aprendiendo, siempre estoy creando.
 
-❤️ Agradecimientos
-Gracias por visitar mi portafolio. Siempre estoy aprendiendo, siempre estoy creando.
-
-“Always learning, Always creating.”
+## “Always learning, Always creating.”
