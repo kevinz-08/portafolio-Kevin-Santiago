@@ -60,7 +60,7 @@ Bienvenido a mi portafolio personal. Este proyecto fue desarrollado con el prop�
 ```bash
 git clone https://kevinz-08.github.io/portafolio-Kevin-Santiago/
 Abre el archivo index.html en tu navegador favorito.
-
+```
 📬 Contacto
 ¿Quieres hablar sobre un proyecto o colaborar?
 
