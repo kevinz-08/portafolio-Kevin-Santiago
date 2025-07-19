@@ -23,7 +23,7 @@ Bienvenido a mi portafolio personal. Este proyecto fue desarrollado con el prop�
 ---
 
 ## 📁 Estructura del Proyecto
-
+```
 📦 PORTAFOLIO-KEVIN-SANTIAGO
 ├── .vscode/
 ├── src/
@@ -38,6 +38,7 @@ Bienvenido a mi portafolio personal. Este proyecto fue desarrollado con el prop�
 ├── index.html
 ├── main.js
 └── README.md
+```
 ---
 
 ## ✨ Funcionalidades
