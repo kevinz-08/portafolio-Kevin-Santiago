@@ -70,7 +70,7 @@ Abre el archivo index.html en tu navegador favorito.
 - 🔗 [Ver Linkedin](https://www.linkedin.com/in/kevingutierrezdev/)
 
 ## 📝 Licencia
-- Este proyecto está licenciado bajo la licencia MIT. Siéntete libre de utilizarlo como base para tu propio portafolio.
+- Este proyecto está licenciado bajo la [Licencia MIT](./LICENSE).
 
 ## ❤️ Agradecimientos
 - Gracias por visitar mi portafolio. Siempre estoy aprendiendo, siempre estoy creando.
