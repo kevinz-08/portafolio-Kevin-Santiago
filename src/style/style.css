@@ -450,7 +450,6 @@ main .photo-box {
   border-radius: 1000px;
 }
 /* ********************** diseño responsive ********************** */
-
 /* Pantallas extra grandes (más de 1800px) - Monitores de 27 pulgadas y más grandes */
 @media only screen and (min-width: 1801px) {
   main {
@@ -672,7 +671,7 @@ main .photo-box {
   }
 
   main .stats-box {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
     gap: 15px;
     padding: 15px 0;
@@ -700,8 +699,8 @@ main .photo-box {
   }
 
   main .buttons {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 5px;
     align-items: center;
   }
 
