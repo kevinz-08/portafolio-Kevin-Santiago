@@ -271,11 +271,13 @@ html {
   background-position: 45% center;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 0 20px;
 }
+
 .kevin-image::before {
   content: "";
   position: absolute;
@@ -284,6 +286,7 @@ html {
   z-index: 0;
 }
 .kevin-image h1 {
+  margin-bottom: clamp(2rem, 6vh, 4rem);
   color: #efefef;
   font-family: "Lato-Bold", sans-serif;
   z-index: 1;
@@ -298,10 +301,29 @@ html {
     font-size: 25px;
   }
   .hero-section {
-    background-position: 60% center; /* más hacia la derecha si la imagen se corta mucho */
+    background-position: 60% center;
   }
 }
 
+.arrow-down {
+  color: #efefef;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  animation: bounce 2s infinite;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+}
+
+/* EStilo de el resto de las secciones */
 main {
   margin-top: 60px;
   padding: 20px;

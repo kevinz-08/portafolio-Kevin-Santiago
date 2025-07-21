@@ -28,16 +28,21 @@ document.addEventListener("scroll", () => {
   });
 });
 
-/* Efecto de Capsula en el navMenu */
-  const navMenu = document.getElementById('navMenu');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 250) {
-      navMenu.classList.add('capsule');
-    } else {
-      navMenu.classList.remove('capsule');
-    }
-  }); 
+/* Efecto de Capsula en el navMenu */
+const navMenu = document.getElementById('navMenu');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 250) {
+    navMenu.classList.add('capsule');
+  } else {
+    navMenu.classList.remove('capsule');
+  }
+}); 
+/* funcion para hacer el scroll con la flecha de abajo */
+document.querySelector('.arrow-down').addEventListener('click', () => {
+document.querySelector('#home').scrollIntoView({ behavior: 'smooth' });
+});
 
 /* * Efecto de escritura y borrado de texto */
 
