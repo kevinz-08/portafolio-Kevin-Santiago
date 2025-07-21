@@ -22,21 +22,12 @@ html {
 }
 .header-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px 20px;
-}
-/* .logo {
   display: flex;
+  padding: 15px 20px;
+  justify-content: center;
   align-items: center;
-} */
-/* .logo img { */
-  /* height: 40px; */
-  /* Añade una imagen de placeholder */
-  /* width: 120px; */
-/* } */
+  position: relative; 
+}
 .menu-toggle {
   display: none; /* Oculto en PC */
   background: none;
@@ -49,14 +40,13 @@ html {
 .links {
   display: flex;
   gap: 40px;
-  margin-right: 20px;
 }
 .links a {
   font-family: "Lato-Bold";
   color: var(--color-6);
   text-decoration: none;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
   transition: color 0.3s;
   padding: 5px 0;
   position: relative;
@@ -85,7 +75,7 @@ html {
   font-size: 20px;
   cursor: pointer;
   transition: color 0.3s ease;
-  z-index: 999;
+  z-index: 9;
 }
 
 @keyframes pulse {
@@ -105,14 +95,14 @@ html {
     display: block;
     order: 1; /* Menú hamburguesa al inicio */
   }
-  
+
   .header-content {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: relative;
   }
-  
+
   .logo {
     order: 2; /* Logo en el centro */
     flex: 1;
@@ -120,14 +110,14 @@ html {
     justify-content: center;
     margin: 0 10px; /* Espacio a los lados */
   }
-  
+
   .div-contact-me {
     order: 3; /* Botones al final */
     display: flex;
     gap: 10px;
     align-items: center;
   }
-  
+
   .links {
     flex-direction: column;
     width: 100%;
@@ -138,34 +128,34 @@ html {
     gap: 10px;
     margin-top: 0;
   }
-  
+
   .links.active {
     max-height: 300px;
     margin-top: 15px;
   }
-  
+
   .links a {
     padding: 10px 0;
     border-bottom: 1px solid #eee;
   }
-  
+
   .links a:last-child {
     border-bottom: none;
   }
-  
+
   /* Ajustar tamaño del logo si es necesario */
   .logo img {
     height: 35px;
     width: auto;
     max-width: 100px;
   }
-  
+
   /* Ajustar botón Contact Me */
   .btn-contact {
     padding: 8px 15px;
     font-size: 14px;
   }
-  
+
   /* Ajustar botón tema */
   .theme-btn {
     font-size: 18px;
@@ -177,13 +167,13 @@ html {
   .main-header {
     position: relative;
   }
-  
+
   .header-content {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
   }
-  
+
   .div-contact-me {
     display: flex;
     justify-content: center;
@@ -191,7 +181,7 @@ html {
     gap: 10px;
     flex-wrap: wrap;
   }
-  
+
   .theme-btn {
     font-size: 20px;
     padding: 8px;
@@ -201,19 +191,19 @@ html {
     color: var(--color-6);
     transition: color 0.3s ease;
   }
-  
+
   .theme-btn:hover {
     color: var(--color-1);
   }
-  
+
   .menu-toggle {
     font-size: 20px;
   }
-  
+
   .logo img {
     max-width: 120px;
   }
-  
+
   nav.links {
     flex-direction: column;
     gap: 10px;
@@ -223,7 +213,7 @@ html {
 
 
 /* ****************************** MAIN **************************** */
-/* imagen de encuadre */ 
+/* imagen de encuadre */
 .kevin-image {
   font-size: clamp(24px, 6vw, 60px);
   text-align: center;
@@ -247,7 +237,7 @@ html {
   z-index: 0;
 }
 .kevin-image h1 {
-  color: #efefef; 
+  color: #efefef;
   font-family: "Lato-Bold", sans-serif;
   z-index: 1;
   position: relative;
@@ -441,71 +431,71 @@ main .photo-box {
     margin-right: auto;
     margin-top: 80px;
   }
-  
+
   main .portada-box {
     margin-left: 120px;
     margin-right: 120px;
     justify-content: space-between;
     align-items: center;
   }
-  
+
   main .text-box {
     margin-top: 120px;
     max-width: 50%;
   }
-  
+
   main .box1 .content p {
     font-size: 30px;
   }
-  
+
   main .box1 .content h1 {
     font-size: 40px;
   }
-  
+
   main .box1 .fullstack-developer {
     font-size: 42px;
   }
-  
+
   main .portada-box .links-social i {
     font-size: 36px;
     width: 50px;
     height: 50px;
     border-radius: 25px;
   }
-  
+
   main .buttons button {
     width: 180px;
     height: 50px;
     font-size: 18px;
   }
-  
+
   main .stats-box {
     width: 700px;
     height: 150px;
   }
-  
+
   main .stats-box .experience,
   main .stats-box .project,
   main .stats-box .clients {
     width: 180px;
     height: 100px;
   }
-  
+
   main .stats-box h1 {
     font-size: 32px;
   }
-  
+
   main .stats-box p {
     font-size: 18px;
   }
-  
+
   main .photo-box {
     margin-left: 0;
     width: 45%;
     display: flex;
     justify-content: center;
   }
-  
+
   main .photo-box img {
     max-width: 90%;
     max-height: 600px;
@@ -517,42 +507,42 @@ main .photo-box {
   main {
     margin-top: 70px;
   }
-  
+
   main .portada-box {
     margin-left: 100px;
     margin-right: 100px;
     justify-content: space-between;
   }
-  
+
   main .text-box {
     margin-top: 110px;
     width: 50%;
   }
-  
+
   main .box1 .content p {
     font-size: 26px;
   }
-  
+
   main .box1 .content h1 {
     font-size: 32px;
   }
-  
+
   main .box1 .fullstack-developer {
     font-size: 34px;
   }
-  
+
   main .photo-box {
     margin-left: 50px;
     width: 40%;
     display: flex;
     justify-content: center;
   }
-  
+
   main .stats-box {
     width: 600px;
     height: 140px;
   }
-  
+
   main .stats-box h1 {
     font-size: 28px;
   }
@@ -565,12 +555,12 @@ main .photo-box {
     margin-right: 80px;
     justify-content: space-between;
   }
-  
+
   main .photo-box {
     margin-left: 120px;
     width: 40%;
   }
-  
+
   main .stats-box {
     width: 100%;
     max-width: 560px;
@@ -583,11 +573,11 @@ main .photo-box {
     margin-left: 40px;
     margin-right: 40px;
   }
-  
+
   main .photo-box {
     margin-left: 80px;
   }
-  
+
   main .stats-box {
     width: 100%;
     max-width: 534px;
@@ -602,24 +592,24 @@ main .photo-box {
     margin-right: 20px;
     align-items: center;
   }
-  
+
   main .text-box {
     margin-top: 40px;
     width: 100%;
     align-items: center;
     text-align: center;
   }
-  
+
   main .photo-box {
     margin-left: 0;
     margin-top: 40px;
   }
-  
+
   main .stats-box {
     width: 100%;
     max-width: 534px;
   }
-  
+
   main .buttons {
     justify-content: center;
   }
@@ -635,31 +625,31 @@ main .photo-box {
     margin-top: 30px;
     padding: 10px;
   }
-  
+
   main .portada-box {
     margin-left: 10px;
     margin-right: 10px;
   }
-  
+
   main .box1 .content p {
     font-size: 20px;
   }
-  
+
   main .box1 .content h1 {
     font-size: 24px;
   }
-  
+
   main .box1 .fullstack-developer {
     font-size: 24px;
   }
-  
+
   main .stats-box {
     flex-direction: row;
     height: auto;
     gap: 15px;
     padding: 15px 0;
   }
-  
+
   main .stats-box .experience,
   main .stats-box .project,
   main .stats-box .clients {
@@ -669,24 +659,24 @@ main .photo-box {
     border-right: none;
     text-align: center;
   }
-  
+
   main .stats-box .experience {
     margin-left: 0;
     border-bottom: 2px var(--color-2) solid;
     padding-bottom: 10px;
   }
-  
+
   main .stats-box .project {
     border-bottom: 2px var(--color-2) solid;
     padding-bottom: 10px;
   }
-  
+
   main .buttons {
     flex-direction: row;
     gap: 5px;
     align-items: center;
   }
-  
+
   main .buttons button {
     width: 90%;
     max-width: 200px;
@@ -711,15 +701,15 @@ main .photo-box {
     height: 35px;
     margin-right: 15px;
   }
-  
+
   main .box1 .content p {
     font-size: 18px;
   }
-  
+
   main .box1 .content h1 {
     font-size: 22px;
   }
-  
+
   main .box1 .fullstack-developer {
     font-size: 22px;
   }
@@ -866,19 +856,19 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 200px;
   }
-  
+
   main .services .text h1 {
     font-size: 48px;
   }
-  
+
   main .services .text p {
     font-size: 24px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 60px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -886,23 +876,23 @@ main .services .icon-and-tittle {
     height: 500px;
     padding: 40px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 80px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 28px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
     font-size: 22px;
   }
-  
+
   .btn-repo {
     padding: 10px 20px;
     font-size: 18px;
@@ -914,19 +904,19 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 180px;
   }
-  
+
   main .services .text h1 {
     font-size: 44px;
   }
-  
+
   main .services .text p {
     font-size: 22px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 50px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -940,11 +930,11 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 160px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 30px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -958,19 +948,19 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 140px;
   }
-  
+
   main .services .text h1 {
     font-size: 36px;
   }
-  
+
   main .services .text p {
     font-size: 18px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 20px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -978,17 +968,17 @@ main .services .icon-and-tittle {
     height: 400px;
     padding: 30px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 60px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 22px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
@@ -1005,16 +995,16 @@ main .services .icon-and-tittle {
   main .services .text h1 {
     font-size: 32px;
   }
-  
+
   main .services .text p {
     font-size: 17px;
   }
-  
+
   main .services .boxes .father-box1 {
     gap: 30px;
     margin-top: 60px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -1022,23 +1012,23 @@ main .services .icon-and-tittle {
     height: 360px;
     padding: 25px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 55px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 20px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
     font-size: 16px;
   }
-  
+
   .btn-repo {
     padding: 10px 18px;
     font-size: 14px;
@@ -1050,22 +1040,22 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 100px;
   }
-  
+
   main .services .text h1 {
     font-size: 28px;
   }
-  
+
   main .services .text p {
     font-size: 16px;
   }
-  
+
   main .services .boxes .father-box1 {
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin-top: 50px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -1075,17 +1065,17 @@ main .services .icon-and-tittle {
     min-height: 350px;
     padding: 25px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 50px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 20px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
@@ -1099,22 +1089,22 @@ main .services .icon-and-tittle {
   main .services {
     margin-top: 80px;
   }
-  
+
   main .services .text h1 {
     font-size: 26px;
   }
-  
+
   main .services .text p {
     font-size: 15px;
   }
-  
+
   main .services .boxes .father-box1 {
     flex-direction: column;
     align-items: center;
     gap: 25px;
     margin-top: 40px;
   }
-  
+
   main .services .box1,
   main .services .box2,
   main .services .box3 {
@@ -1123,24 +1113,24 @@ main .services .icon-and-tittle {
     min-height: 320px;
     padding: 20px;
   }
-  
+
   main .services .box1 i,
   main .services .box2 i,
   main .services .box3 i {
     font-size: 45px;
   }
-  
+
   main .services .boxes h1 {
     font-size: 18px;
   }
-  
+
   main .services .box1 p,
   main .services .box2 p,
   main .services .box3 p {
     font-size: 15px;
     margin-bottom: 12px;
   }
-  
+
   .btn-repo {
     padding: 8px 16px;
     font-size: 14px;
@@ -1196,13 +1186,13 @@ main .services .icon-and-tittle {
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), filter 0.3s;
     transform-origin: center;
   }
-  
+
   .slider .item:hover img {
     transform: scale(1.15);
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
     z-index: 2;
   }
-  
+
   @keyframes autoRun {
     from {
       left: 100%;
@@ -1211,20 +1201,20 @@ main .services .icon-and-tittle {
       left: calc(var(--width) * -1);
     }
   }
-  
+
   .slider:hover .item {
     animation-play-state: paused !important;
     filter: grayscale(1);
   }
-  
+
   .slider .item:hover {
     filter: grayscale(0);
   }
-  
+
   .slider[reverse="true"] .item {
     animation: reversePlay 10s linear infinite;
   }
-  
+
   @keyframes reversePlay {
     from {
       left: calc(var(--width) * -1);
@@ -1233,7 +1223,7 @@ main .services .icon-and-tittle {
       left: 100%;
     }
   }
-  
+
   /* **************** about me ******************** */
   #about-me {
     scroll-margin: 70px;
@@ -1246,20 +1236,20 @@ main .services .icon-and-tittle {
     justify-content: center;
     padding: 0 20px;
   }
-  
+
   .about-me .titte-description {
     max-width: 800px;
     width: 100%;
     height: 100%;
   }
-  
+
   .about-me .titte-description h1 {
     font-size: 40px;
     text-align: center;
     color: var(--color-7);
     font-family: "Lato-Bold";
   }
-  
+
   .about-me .titte-description p {
     font-size: 20px;
     text-align: center;
@@ -1267,7 +1257,7 @@ main .services .icon-and-tittle {
     font-family: "Lato-Medium";
     margin-top: 15px;
   }
-  
+
   main .image-text {
     margin-top: 50px;
     display: flex;
@@ -1276,9 +1266,9 @@ main .services .icon-and-tittle {
     justify-content: center;
     gap: 150px;
     width: 100%;
-    max-width: 1400px; 
+    max-width: 1400px;
   }
-  
+
   main .image-text p {
     width: 630px;
     max-width: 100%;
@@ -1289,12 +1279,12 @@ main .services .icon-and-tittle {
     color: var(--color-6);
     font-family: "Lato-Medium";
   }
-  
+
   main .text-and-btn a {
     margin-top: 10px;
     display: inline-block;
   }
-  
+
   .btn-cv {
       font-family: "Lato-Bold", sans-serif;
       background: linear-gradient(135deg, #984300, #fd6f00, #ca5900);
@@ -1320,14 +1310,14 @@ main .services .icon-and-tittle {
     height: 480px;
     flex-shrink: 0;
   }
-  
+
   .image img {
     position: relative;
     width: 100%;
     height: auto;
     z-index: 1;
   }
-  
+
   .background-arch {
     position: absolute;
     top: 18%;
@@ -1338,7 +1328,7 @@ main .services .icon-and-tittle {
     border-radius: 50% / 25%;
     z-index: 0;
   }
-  
+
   .theme-btn {
     background: none;
     border: none;
@@ -1347,32 +1337,32 @@ main .services .icon-and-tittle {
     cursor: pointer;
     transition: color 0.3s ease;
   }
-  
+
   /********************** diseño responsive ********************* */
   /* Pantallas extra grandes (más de 1800px) */
   @media only screen and (min-width: 1801px) {
     main .about-me {
       margin-top: 250px;
     }
-    
+
     .about-me .titte-description h1 {
       font-size: 48px;
     }
-    
+
     .about-me .titte-description p {
       font-size: 24px;
     }
-    
+
     main .image-text {
       gap: 200px;
       margin-top: 80px;
     }
-    
+
     main .image-text p {
       font-size: 20px;
       width: 700px;
     }
-    
+
     .image {
       width: 380px;
       height: 570px;
@@ -1384,20 +1374,20 @@ main .services .icon-and-tittle {
   main .about-me {
     margin-top: 230px;
   }
-  
+
   .about-me .titte-description h1 {
     font-size: 44px;
   }
-  
+
   .about-me .titte-description p {
     font-size: 22px;
   }
-  
+
   main .image-text {
     gap: 180px;
     margin-top: 70px;
   }
-  
+
   main .image-text p {
     font-size: 19px;
     width: 650px;
@@ -1414,15 +1404,15 @@ main .services .icon-and-tittle {
   main .about-me {
     margin-top: 210px;
   }
-  
+
   .about-me .titte-description h1 {
     font-size: 42px;
   }
-  
+
   .about-me .titte-description p {
     font-size: 21px;
   }
-  
+
   main .image-text {
     gap: 120px;
     margin-top: 60px;
@@ -1438,25 +1428,25 @@ main .services .icon-and-tittle {
   main .about-me {
     margin-top: 180px;
   }
-  
+
   .about-me .titte-description h1 {
     font-size: 38px;
   }
-  
+
   .about-me .titte-description p {
     font-size: 19px;
   }
-  
+
   main .image-text {
     gap: 80px;
     margin-top: 50px;
   }
-  
+
   main .image-text p {
     width: 500px;
     font-size: 17px;
   }
-  
+
   .image {
     width: 280px;
     height: 420px;
@@ -1468,24 +1458,24 @@ main .services .icon-and-tittle {
   main .about-me {
     margin-top: 150px;
   }
-  
+
   .about-me .titte-description h1 {
     font-size: 34px;
   }
-  
+
   .about-me .titte-description p {
     font-size: 18px;
   }
-  
+
   main .image-text {
     gap: 60px;
     margin-top: 40px;
     flex-direction: column; /* Cambiar a columna en tablets */
   }
-  
+
   main .image-text p {
     width: 100%;
-    
+
     max-width: 600px;
     text-align: center; /* Centrar texto en tablets */
     font-size: 16px;
@@ -1571,7 +1561,7 @@ main .services .icon-and-tittle {
     height: 300px;
   }
   main .text-and-btn {
-    text-align: center;  
+    text-align: center;
 }
 
   main .text-and-btn a {
@@ -1580,7 +1570,7 @@ main .services .icon-and-tittle {
     padding: 8px 16px;
     font-size: 14px;
   }
-  
+
   main .text-and-btn p {
     text-align: center;
   }
@@ -1745,35 +1735,35 @@ input[type="submit"] {
     margin-top: 80px;
     padding: 0 10px;
   }
-  
+
   .form-box h1 {
     font-size: 28px;
   }
-  
+
   .form-box p {
     font-size: 16px;
     margin-top: 15px;
   }
-  
+
   .form-box form {
     margin-top: 40px;
     gap: 15px;
   }
-  
+
   .form-box input,
   .form-box textarea {
     padding: 8px;
     font-size: 14px;
   }
-  
+
   .form-box textarea {
     height: 120px;
   }
-  
+
   .form-box label {
     font-size: 14px;
   }
-  
+
   input[type="submit"] {
     margin-top: 20px;
     padding: 10px 20px;
