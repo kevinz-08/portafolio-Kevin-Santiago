@@ -28,6 +28,16 @@ document.addEventListener("scroll", () => {
   });
 });
 
+/* Efecto de Capsula en el navMenu */
+  const navMenu = document.getElementById('navMenu');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 250) {
+      navMenu.classList.add('capsule');
+    } else {
+      navMenu.classList.remove('capsule');
+    }
+  }); 
 
 /* * Efecto de escritura y borrado de texto */
 
