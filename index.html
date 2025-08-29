@@ -198,37 +198,42 @@
           <h1>Contact Me</h1>
           <p>Cultivating Connections: Reach Out and Connect with Me</p>
         </div>
-        <form action="https://formsubmit.co/paginaweboncecoal@gmaiil.com" method="POST" >
+
+      <!-- Formulario con Formspree -->
+        <form action="https://formspree.io/f/xvgbkply" method="POST" autocomplete="off">
           <div class="form-left">
             <div class="nombre">
-              <label for="Nombre">Name</label>
-              <input type="text" name="name" placeholder="Name">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Name" required>
             </div>
-            
+
             <div class="email">
-              <label for="email">E-Mail</label>
-              <input type="email" name="email" placeholder="Email">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
             </div>
-            
+
             <div class="asunto">
-              <label for="subject">Subject</label>
-              <input type="text" name="subject" placeholder="Asunto">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
             </div>
           </div>
-          
+
           <div class="form-right">
             <div class="comentarios">
               <label for="comments">Comments</label>
-              <textarea name="comments" cols="15" rows="5"></textarea>
+              <textarea id="comments" name="comments" placeholder="Write your message..." rows="5" required></textarea>
             </div>
           </div>
-          
+
+          <!-- Botón -->
           <input type="submit" value="Send" class="btn-repo">
-          
-          <input type="hidden" name="_next" value="http://localhost:5501">
+
+          <!-- Opcionales -->
           <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
         </form>
       </div>
+
     </main>
     
     <!-- Footer -->
