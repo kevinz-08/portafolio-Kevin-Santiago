@@ -673,6 +673,12 @@ main .photo-box {
     margin-top: 40px;
   }
 
+  main .photo-box img {
+  width: 120px;     /* ajusta el tamaño aquí */
+  height: auto;     /* mantiene proporción */
+  display: block;
+}
+
   main .stats-box {
     width: 100%;
     max-width: 534px;

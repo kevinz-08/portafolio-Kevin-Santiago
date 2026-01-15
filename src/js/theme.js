@@ -17,3 +17,16 @@ toggleBtn.addEventListener("click", () => {
     : '<i class="fa-solid fa-moon"></i>';
   localStorage.setItem("theme", isDark ? "dark" : "light");
 });
+// ------------------------------------------------------
+
+const themeBtn = document.getElementById("toggle-theme");
+const logo = document.getElementById("logo");
+
+themeBtn.addEventListener("click", () => {
+  const isLight = document.body.classList.toggle("light-theme");
+
+  logo.src = isLight
+    ? logo.dataset.light   // light → logo negro
+    : logo.dataset.dark;   // dark → logo blanco
+});
+
