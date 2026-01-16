@@ -12,32 +12,43 @@ Bienvenido a mi portafolio personal. Este proyecto fue desarrollado con el prop�
 
 ## 🛠 Tecnologías Utilizadas
 
-- HTML5
-- CSS3 (Variables CSS, Flexbox, Grid, Animaciones)
-- JavaScript (DOM, Eventos, Transiciones, Temas)
-- Responsive Design (Mobile First)
+- HTML5 & CSS3 & JavaScript
+- React & Tailwind
+- Responsive Design
 - Figma (Prototipado UI/UX)
-- Adobe Photoshop & PhotoShop (Edición de imagenes)
-- Git y GitHub (Control de versiones)
+- Adobe Photoshop & PhotoShop
+- Git y GitHub
 
 ---
 
 ## 📁 Estructura del Proyecto
 ```
-📦 PORTAFOLIO-KEVIN-SANTIAGO
-├── .vscode/
+portafolio-Kevin-Santiago/
+├── index.html (actualizado para Vite)
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
 ├── src/
-│ ├── fonts/
-│ ├── img/
-│ ├── js/
-│ │ ├── animation.js
-│ │ └── theme.js
-│ └── style/
-│ ├── style.css
-│ └── variables.css
-├── index.html
-├── main.js
-└── README.md
+│   ├── main.jsx (punto de entrada)
+│   ├── App.jsx (componente principal)
+│   ├── index.css (estilos globales con Tailwind)
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Services.jsx
+│   │   ├── Technologies.jsx
+│   │   ├── AboutMe.jsx
+│   │   ├── ContactForm.jsx
+│   │   └── Footer.jsx
+│   ├── hooks/
+│   │   ├── useTheme.js
+│   │   ├── useTypewriter.js
+│   │   ├── useScrollSpy.js
+│   │   ├── useCounter.js
+│   │   └── useParallax.js
+│   ├── img/ (sin cambios)
+│   └── fonts/ (sin cambios)
 ```
 ---
 
@@ -59,7 +70,7 @@ Bienvenido a mi portafolio personal. Este proyecto fue desarrollado con el prop�
 
 ```bash
 git clone https://kevinz-08.github.io/portafolio-Kevin-Santiago/
-Abre el archivo index.html en tu navegador favorito.
+Npm run dev - Para correr el proyecto
 ```
 ## 📬 Contacto
 ¿Quieres hablar sobre un proyecto o colaborar?
@@ -71,8 +82,5 @@ Abre el archivo index.html en tu navegador favorito.
 
 ## 📝 Licencia
 - Este proyecto está licenciado bajo la [Licencia MIT](./LICENSE).
-
-## ❤️ Agradecimientos
-- Gracias por visitar mi portafolio. Siempre estoy aprendiendo, siempre estoy creando.
 
 ## “Always learning, Always creating.”
