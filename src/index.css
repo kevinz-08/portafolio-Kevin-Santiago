@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================
+   Fonts
+========================= */
 @font-face {
   font-family: "Lato-Black";
   src: url(./fonts/Lato-Black.ttf);
@@ -27,6 +30,9 @@
   src: url(./fonts/Lato-SemiBold.ttf);
 }
 
+/* =========================
+   Base styles (THEMES)
+========================= */
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -36,26 +42,23 @@
     @apply bg-bg-light dark:bg-bg-primary transition-colors duration-300;
   }
 
-  body.light-theme {
-    @apply bg-bg-light;
-  }
-
-  body.dark-theme {
-    @apply bg-bg-primary;
-  }
-
   * {
     @apply transition-colors duration-300;
   }
 }
 
+/* =========================
+   Utilities
+========================= */
 @layer utilities {
   .text-gradient {
     @apply bg-gradient-text bg-clip-text text-transparent;
   }
 }
 
-/* Slider animations */
+/* =========================
+   Slider animations
+========================= */
 @keyframes autoRun {
   from {
     left: 100%;

@@ -11,7 +11,7 @@ const texts = ['Backend Developer', 'Frontend Developer', 'Fullstack Developer']
 
 const stats = [
   { label: 'Experiences', target: 3 },
-  { label: 'Project Done', target: 10 },
+  { label: 'Projects Done', target: 10 },
   { label: 'Happy Clients', target: 5 },
 ]
 
