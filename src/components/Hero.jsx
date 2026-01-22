@@ -1,7 +1,7 @@
 import { useTypewriter } from '../hooks/useTypewriter'
 import { useCounter } from '../hooks/useCounter'
 import { useParallax } from '../hooks/useParallax'
-import { useTheme } from '../hooks/useTheme'
+import { useTheme } from '../hooks/useTheme' 
 import logoWhite from '../img/logo-white.png'
 import logoBlack from '../img/logo-black.png'
 import cvPdf from '../img/Kevin Gutierrez - HV.pdf'
@@ -17,7 +17,7 @@ const stats = [
 
 export default function Hero() {
   const displayText = useTypewriter(texts)
-  const { theme } = useTheme()
+  // const { theme } = useTheme() // Opcional: ya no es estrictamente necesario para el logo
   const { getParallaxStyle } = useParallax()
 
   const handleHireMe = () => {
@@ -121,14 +121,42 @@ export default function Hero() {
             <StatsBox stats={stats} />
           </div>
 
-          {/* Foto/Logo */}
-          <div className="mt-10 md:mt-0 md:ml-12 lg:ml-48 bg-bg-card dark:bg-bg-card rounded-full flex items-center justify-center" data-aos="fade-left">
-            <img
-              src={theme === 'dark' ? logoWhite : logoBlack}
-              alt="Logo Kevin Gutierrez"
-              className="w-32 md:w-48 lg:w-64 h-auto"
-            />
+          {/* ------------------------------------------
+            SECCIÓN DEL LOGO
+            ------------------------------------------
+          */}
+          <div 
+            className="mt-10 md:mt-0 md:ml-12 lg:ml-24 flex items-center justify-center" 
+            data-aos="fade-left"
+          >
+            <div className="relative  flex items-center justify-center  rounded-full  shadow-xl 
+              w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 
+              
+              /* CONTROL DE FONDO DEL CONTENEDOR: */
+              /* Light Mode: gris claro (gray-100) */
+              bg-gray-100 
+              /* Dark Mode: gris oscuro (gray-800) NO NEGRO */
+              dark:bg-[#151516]
+              
+              /* Transición suave del color de fondo */
+              transition-colors duration-500
+            ">
+              
+              {/* IMAGEN 1: LOGO OSCURO (Se muestra en Light Mode) */}
+              <img
+                src={logoBlack}
+                alt="Logo Kevin Gutierrez Dark"
+                className="w-2/3 h-auto object-contain  block dark:hidden transition-all duration-500 transform hover:scale-105"
+              />
+
+              {/* IMAGEN 2: LOGO CLARO (Se muestra en Dark Mode) */}
+              <img src={logoWhite} alt="Logo Kevin Gutierrez Light"
+                className="w-2/3 h-auto object-contain  hidden dark:block transition-all duration-500 transform hover:scale-105"
+              />
+            </div>
           </div>
+          {/* FIN SECCIÓN LOGO */}
+
         </div>
       </section>
     </>
