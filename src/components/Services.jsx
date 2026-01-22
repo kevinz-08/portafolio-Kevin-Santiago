@@ -27,7 +27,8 @@ export default function Services() {
     <section id="services" className="scroll-mt-16 mt-32 md:mt-40 px-5">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 md:mb-20">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-lato-bold text-text-primary dark:text-text-primary mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-lato-bold text-text-dark dark:text-text-primary mb-4
+">
             Services
           </h1>
           <p className="text-lg md:text-xl font-lato-medium text-text-secondary dark:text-text-secondary max-w-2xl mx-auto">
@@ -47,7 +48,7 @@ export default function Services() {
 
 function ServiceCard({ service }) {
   return (
-    <div className="bg-bg-card dark:bg-bg-card w-full sm:w-[350px] min-h-[400px] p-8 rounded-3xl flex flex-col justify-between text-center transition-all duration-300 hover:-translate-y-2.5 hover:shadow-xl">
+    <div className="bg-bg-cardLight dark:bg-bg-card w-full sm:w-[350px] min-h-[400px] p-8 rounded-3xl flex flex-col justify-between text-center transition-all duration-300 hover:-translate-y-2.5 hover:shadow-xl">
       <div className="flex flex-col items-center justify-center gap-4 mb-6">
         <i className={`${service.icon} text-primary text-5xl md:text-7xl`}></i>
         <h1 className="font-lato-bold text-primary text-xl md:text-2xl">{service.title}</h1>
@@ -62,7 +63,7 @@ function ServiceCard({ service }) {
           href={service.pageUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-5 py-2.5 rounded-lg bg-gradient-primary text-white text-center font-lato-bold font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
+          className="px-5 py-2.5 rounded-lg bg-text-secondary dark:bg-gradient-secondary text-white dark:text-white text-center font-lato-bold font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/40"
         >
           View the Page
         </a>

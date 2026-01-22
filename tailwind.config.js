@@ -15,9 +15,9 @@ export default {
         },
         text: {
           primary: '#FEFEFE',
-          secondary: '#959595',
+          secondary: '#B0B0B0',
           tertiary: '#707070',
-          dark: '#000000',
+          dark: '#2E2E2E',
         },
         bg: {
           primary: '#121212',

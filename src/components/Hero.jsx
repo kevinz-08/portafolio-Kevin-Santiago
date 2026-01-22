@@ -59,7 +59,7 @@ export default function Hero() {
               <p className="text-text-secondary dark:text-text-secondary text-xl md:text-2xl font-lato-semibold">
                 Hi I am
               </p>
-              <h1 className="text-text-primary dark:text-text-primary text-2xl md:text-3xl lg:text-4xl font-lato-bold">
+              <h1 className="text-text-dark dark:text-text-primary text-2xl md:text-3xl lg:text-4xl font-lato-bold">
                 Kevin Gutierrez
               </h1>
             </div>
@@ -75,7 +75,7 @@ export default function Hero() {
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-primary dark:text-text-primary bg-border border-border rounded-full w-10 h-10 flex items-center justify-center text-xl md:text-2xl hover:text-primary transition-colors"
+                className="text-text-dark dark:text-text-primary bg-border border-border rounded-full w-10 h-10 flex items-center justify-center text-xl md:text-2xl hover:text-primary transition-colors"
                 aria-label="Instagram"
               >
                 <i className="fa-brands fa-instagram"></i>
@@ -84,7 +84,7 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/kevin-gutierrez-b4214535b/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-primary dark:text-text-primary bg-border border-border rounded-full w-10 h-10 flex items-center justify-center text-xl md:text-2xl hover:text-primary transition-colors"
+                className="text-text-dark dark:text-text-primary bg-border border-border rounded-full w-10 h-10 flex items-center justify-center text-xl md:text-2xl hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
                 <i className="fa-brands fa-linkedin"></i>
@@ -93,7 +93,7 @@ export default function Hero() {
                 href="https://github.com/kevinz-08"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-text-primary dark:text-text-primary bg-border border-border rounded-full w-10 h-10 flex items-center justify-center text-xl md:text-2xl hover:text-primary transition-colors"
+                className="text-text-dark dark:text-text-primary bg-border border-border rounded-full w-10 h-10 flex items-center justify-center text-xl md:text-2xl hover:text-primary transition-colors"
                 aria-label="GitHub"
               >
                 <i className="fa-brands fa-github"></i>
@@ -111,7 +111,7 @@ export default function Hero() {
               <a
                 href={cvPdf}
                 download
-                className="w-full sm:w-36 md:w-40 h-10 md:h-12 rounded-lg bg-transparent text-text-primary dark:text-text-primary border-2 border-text-primary dark:border-text-primary flex items-center justify-center font-lato-bold text-base md:text-lg font-semibold cursor-pointer transition-all duration-400 hover:scale-105 hover:bg-text-primary dark:hover:bg-text-primary hover:text-bg-primary dark:hover:text-bg-primary"
+                className="w-full sm:w-36 md:w-40 h-10 md:h-12 rounded-lg bg-transparent text-text-dark dark:text-text-primary border-2 border-text-dark dark:border-text-primary flex items-center justify-center font-lato-bold text-base md:text-lg cursor-pointer transition-all duration-300 hover:scale-105 hover:bg-text-dark dark:hover:bg-text-primary hover:text-bg-light dark:hover:text-bg-primary"
               >
                 Download CV
               </a>
@@ -138,7 +138,7 @@ export default function Hero() {
 function StatsBox({ stats }) {
   return (
     <div
-      className="w-full md:w-[534px] h-auto md:h-[125px] bg-bg-card dark:bg-bg-card rounded-lg flex flex-col md:flex-row gap-4 md:gap-8 p-6 md:p-0 font-lato-bold mt-10"
+      className="w-full md:w-[534px] h-auto md:h-[125px] bg-bg-cardLight dark:bg-bg-card rounded-lg flex flex-col md:flex-row gap-4 md:gap-8 p-6 md:p-0 font-lato-bold mt-10"
       data-aos="fade-up"
     >
       {stats.map((stat, index) => (
@@ -158,10 +158,10 @@ function StatItem({ label, target, isLast }) {
         !isLast ? 'md:border-r-2 border-primary pb-4 md:pb-0' : ''
       } ${isLast ? '' : 'md:pl-6'} md:pt-6`}
     >
-      <h1 className="text-text-primary dark:text-text-primary text-2xl md:text-3xl">
+      <h1 className="text-text-dark dark:text-text-primary text-2xl md:text-3xl">
         +{count}
       </h1>
-      <p className="text-text-primary dark:text-text-primary text-sm md:text-base mt-3">
+      <p className="text-text-secondary dark:text-text-secondary text-sm md:text-base mt-3">
         {label}
       </p>
     </div>
