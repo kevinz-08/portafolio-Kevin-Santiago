@@ -33,7 +33,7 @@ export default function Hero() {
 
   return (
     <>
-      {/* Hero Section con imagen de fondo */}
+      /* Hero Section con imagen de fondo */
       <div className="relative h-screen w-full flex flex-col items-center justify-center text-center px-5 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroImage})`, backgroundPosition: '45% center' }}>
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 z-0"></div>
         <h1
@@ -50,10 +50,10 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Sección Home */}
+      /* Sección Home */
       <section id="home" className="scroll-mt-16 pt-20 px-5 md:px-20">
         <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
-          {/* Contenido de texto */}
+          /* Contenido de texto */
           <div className="mt-20 md:mt-28 flex flex-col w-full md:w-1/2">
             <div className="mb-6">
               <p className="text-text-secondary dark:text-text-secondary text-xl md:text-2xl font-lato-semibold">
@@ -69,7 +69,7 @@ export default function Hero() {
               <span className="animate-pulse">|</span>
             </h4>
 
-            {/* Links sociales */}
+            /* Links sociales */
             <div className="flex gap-8 mb-8">
               <a
                 href=""
@@ -100,7 +100,7 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Botones */}
+            /* Botones */
             <div className="flex flex-col sm:flex-row gap-4 md:gap-5 mb-10">
               <button
                 onClick={handleHireMe}
@@ -121,42 +121,23 @@ export default function Hero() {
             <StatsBox stats={stats} />
           </div>
 
-          {/* ------------------------------------------
-            SECCIÓN DEL LOGO
-            ------------------------------------------
-          */}
+          /*SECCIÓN DEL LOGO*/
           <div 
             className="mt-10 md:mt-0 md:ml-12 lg:ml-24 flex items-center justify-center" 
             data-aos="fade-left"
           >
-            <div className="relative  flex items-center justify-center  rounded-full  shadow-xl 
-              w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 
-              
-              /* CONTROL DE FONDO DEL CONTENEDOR: */
-              /* Light Mode: gris claro (gray-100) */
-              bg-gray-100 
-              /* Dark Mode: gris oscuro (gray-800) NO NEGRO */
-              dark:bg-[#151516]
-              
-              /* Transición suave del color de fondo */
-              transition-colors duration-500
-            ">
-              
-              {/* IMAGEN 1: LOGO OSCURO (Se muestra en Light Mode) */}
+            <div className="relative  flex items-center justify-center rounded-full hadow-xl w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gray-100 dark:bg-[#151516] transition-colors duration-500">
               <img
                 src={logoBlack}
                 alt="Logo Kevin Gutierrez Dark"
                 className="w-2/3 h-auto object-contain  block dark:hidden transition-all duration-500 transform hover:scale-105"
               />
 
-              {/* IMAGEN 2: LOGO CLARO (Se muestra en Dark Mode) */}
               <img src={logoWhite} alt="Logo Kevin Gutierrez Light"
                 className="w-2/3 h-auto object-contain  hidden dark:block transition-all duration-500 transform hover:scale-105"
               />
             </div>
           </div>
-          {/* FIN SECCIÓN LOGO */}
-
         </div>
       </section>
     </>
