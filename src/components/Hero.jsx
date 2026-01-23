@@ -17,7 +17,6 @@ const stats = [
 
 export default function Hero() {
   const displayText = useTypewriter(texts)
-  // const { theme } = useTheme() // Opcional: ya no es estrictamente necesario para el logo
   const { getParallaxStyle } = useParallax()
 
   const handleHireMe = () => {

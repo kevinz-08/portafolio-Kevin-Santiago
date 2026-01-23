@@ -1,5 +1,5 @@
 import { useTheme } from '../hooks/useTheme'
-// Importamos los iconos reales
+// Importe iconos reales
 import { FaHtml5, FaCss3Alt, FaJs, FaPython, FaReact, FaBootstrap, FaPhp } from "react-icons/fa";
 import { SiTailwindcss, SiMysql } from "react-icons/si";
 
@@ -36,15 +36,12 @@ export default function Technologies() {
 
 function TechnologyItem({ tech, position, total }) {
   const delay = ((10 / total) * (position - 1) - 10).toFixed(2)
-  const IconComponent = tech.Icon; // Extraemos el componente
+  const IconComponent = tech.Icon;
   
   return (
     <div
       className="slider-item w-[100px] h-[100px] absolute left-full flex items-center justify-center"
-      style={{
-        animation: `autoRun 10s linear infinite`,
-        animationDelay: `${delay}s`,
-      }}
+      style={{animation: `autoRun 10s linear infinite`, animationDelay: `${delay}s`,}}
     >
       <a href={tech.url} target="_blank" rel="noopener noreferrer" className="block group">
         <IconComponent 
