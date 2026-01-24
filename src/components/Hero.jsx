@@ -125,7 +125,7 @@ export default function Hero() {
             className="mt-10 md:mt-0 md:ml-12 lg:ml-24 flex items-center justify-center" 
             data-aos="fade-left"
           >
-            <div className="relative  flex items-center justify-center rounded-full hadow-xl w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gray-100 dark:bg-[#151516] transition-colors duration-500">
+            <div className="relative flex items-center justify-center rounded-full hadow-xl w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gray-100 dark:bg-[#151516] transition-colors duration-500">
               <img
                 src={logoBlack}
                 alt="Logo Kevin Gutierrez Dark"

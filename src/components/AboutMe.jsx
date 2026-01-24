@@ -1,5 +1,5 @@
 import cvPdf from '../img/Kevin Gutierrez - HV.pdf'
-import profileImage from '../img/pfp1-cut.png'
+import profileImage from '../img/logo-white.png'
 
 export default function AboutMe() {
   return (
@@ -17,12 +17,12 @@ export default function AboutMe() {
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 md:gap-24 lg:gap-32 mt-12 md:mt-16">
           {/* Imagen */}
-          <div className="relative w-64 md:w-80 lg:w-96 flex-shrink-0" data-aos="fade-right">
-            <div className="absolute top-[18%] left-1/2 transform -translate-x-1/2 w-4/5 h-[70%] bg-bg-card dark:bg-bg-card rounded-[50%_/_25%] z-0"></div>
+          <div className= "relative w-64 md:w-80 lg:w-96 h-64 md:h-80 lg:h-96 flex items-center justify-center flex-shrink-0" data-aos="fade-right">
+            <div className= "absolute inset-0 m-auto w-[90%] h-[90%] bg-bg-card dark:bg-bg-card rounded-full opacity-50 z-0"></div>
             <img
               src={profileImage}
               alt="Kevin Gutierrez"
-              className="relative w-full h-auto z-10 mt-20"
+              className="relative w-4/5 h-auto z-10 drop-shadow-2xl"
             />
           </div>
 
