@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import cvPdf from '../../img/Kevin Gutierrez - HV.pdf'
 import SmokeShader from './SmokeShader'
 
 export default function Hero({ introComplete = false }) {
@@ -100,7 +101,7 @@ export default function Hero({ introComplete = false }) {
           <HeroButton href="mailto:kevingadev@gmail.com?subject=Consulta desde el portafolio">
             Trabajemos juntos
           </HeroButton>
-          <HeroButton href="#proyectos">Ver proyectos</HeroButton>
+          <HeroButton href={cvPdf} download>Descargar CV</HeroButton>
         </div>
       </div>
 
@@ -141,7 +142,7 @@ function Badge({ children }) {
   )
 }
 
-function HeroButton({ href, children }) {
+function HeroButton({ href, children, download }) {
   const gradientBorder = (intensity) =>
     `linear-gradient(rgba(10,10,10,0.85), rgba(10,10,10,0.85)) padding-box,
      linear-gradient(45deg, rgba(255,255,255,${intensity}) 0%, rgba(255,255,255,0.06) 40%, rgba(255,255,255,0.06) 60%, rgba(255,255,255,${intensity}) 100%) border-box`
@@ -160,6 +161,7 @@ function HeroButton({ href, children }) {
   return (
     <a
       href={href}
+      download={download || undefined}
       style={{
         display: 'inline-block',
         fontFamily: "'DM Sans', sans-serif",

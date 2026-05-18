@@ -1,46 +1,36 @@
-import { useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Services from './components/Services'
-import Technologies from './components/Technologies'
 import AboutMe from './components/AboutMe'
+import Technologies from './components/Technologies'
+import Experiencia from './components/Experiencia'
+import Services from './components/Services'
+import Formacion from './components/Formacion'
+import Aprendiendo from './components/Aprendiendo'
 import ContactForm from './components/ContactForm'
-import Footer from './components/Footer'
-import { useTheme } from '../hooks/useTheme'
+
+const Divider = () => (
+  <div style={{ height: '1px', background: '#2a2a2a', margin: '64px 24px 0' }} />
+)
 
 function MobileApp() {
-  const { theme } = useTheme()
-
-  useEffect(() => {
-    const initAOS = () => {
-      if (typeof window !== 'undefined' && window.AOS) {
-        window.AOS.init({
-          duration: 1000,
-          once: false,
-        })
-      }
-    }
-
-    if (typeof window !== 'undefined') {
-      if (window.AOS) {
-        initAOS()
-      } else {
-        setTimeout(initAOS, 100)
-      }
-    }
-  }, [])
-
   return (
-    <div className="min-h-screen">
+    <div style={{ backgroundColor: '#0a0a0a', minHeight: '100vh' }}>
       <Header />
       <Hero />
-      <main className="pt-16">
-        <Services />
-        <Technologies />
+      <main>
         <AboutMe />
+        <Divider />
+        <Technologies />
+        <Divider />
+        <Experiencia />
+        <Divider />
+        <Services />
+        <Divider />
+        <Formacion />
+        <Divider />
+        <Aprendiendo />
         <ContactForm />
       </main>
-      <Footer />
     </div>
   )
 }
