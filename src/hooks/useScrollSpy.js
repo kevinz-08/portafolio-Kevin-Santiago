@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export function useScrollSpy(sectionIds, threshold = 0.6) {
+export function useScrollSpy(sectionIds) {
   const [activeSection, setActiveSection] = useState('')
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export function useScrollSpy(sectionIds, threshold = 0.6) {
           }
         })
       },
-      { threshold }
+      { threshold: 0, rootMargin: '-30% 0px -30% 0px' }
     )
 
     sections.forEach(section => observer.observe(section))
@@ -22,7 +22,7 @@ export function useScrollSpy(sectionIds, threshold = 0.6) {
     return () => {
       sections.forEach(section => observer.unobserve(section))
     }
-  }, [sectionIds, threshold])
+  }, [sectionIds])
 
   return activeSection
 }

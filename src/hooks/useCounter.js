@@ -44,8 +44,7 @@ export function useCounter(target, duration = 2000) {
       ([entry]) => {
         if (entry.isIntersecting) {
           startCounter()
-        } else {
-          resetCounter()
+          observer.unobserve(element)
         }
       },
       {
