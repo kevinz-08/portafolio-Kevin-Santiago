@@ -26,11 +26,12 @@ const ITEMS = [
   {
     id: 2,
     type: 'Freelance',
-    name: 'E-Commerce Store',
+    name: 'Tiendah2r Ecommerce',
     role: 'Full Stack Developer',
     period: 'Abr 2026 – Jun 2026',
     bgColor: '#262626',
     bgImage: ecommerceImage,
+    link: 'https://www.tiendah2r.com',
     description: 'E-commerce especializado en la comercialización de productos, diseñado con una interfaz funcional para la gestión eficiente de catálogos y transacciones. La plataforma integra herramientas de automatización para optimizar la experiencia de compra y el procesamiento de pedidos, facilitando la operatividad comercial para sus usuarios.',
   },
   {

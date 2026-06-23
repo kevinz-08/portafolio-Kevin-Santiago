@@ -14,7 +14,7 @@ const DS = {
 const ITEMS = [
   { id: 1, type: 'Empresa',   name: 'Globant',          role: 'Frontend Developer',          period: '2024 – 2026', bgColor: '#2e2e2e', bgImage: globantLogo,
     description: 'Gestión integral de proyectos de software: desde el análisis y levantamiento de requerimientos hasta el desarrollo, pruebas de calidad y soporte técnico especializado, siempre alineado con las necesidades operativas de la empresa.' },
-  { id: 2, type: 'Freelance', name: 'E-Commerce Store', role: 'React · Node.js · Tailwind',  period: '2026',            bgColor: '#262626', bgImage: ecommerceImage,
+  { id: 2, type: 'Freelance', name: 'Tiendah2r Ecommerce', role: 'React · Node.js · Tailwind',  period: '2026',            bgColor: '#262626', bgImage: ecommerceImage, link: 'https://www.tiendah2r.com',
     description: 'E-commerce especializado en la comercialización de productos, diseñado con una interfaz funcional para la gestión eficiente de catálogos y transacciones. La plataforma integra herramientas de automatización para optimizar la experiencia de compra y el procesamiento de pedidos, facilitando la operatividad comercial para sus usuarios.' },
   { id: 3, type: 'Freelance', name: 'Brain Solutions',  role: 'Next.js · Framer Motion',     period: '2026',            bgColor: '#333333', bgImage: brainsolImage,
     link: 'https://brainsol.vercel.app/',
