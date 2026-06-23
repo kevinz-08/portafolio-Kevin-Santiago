@@ -20,49 +20,57 @@ const DS = {
 
 const PROJECTS = [
   {
-    name: 'E-Commerce de Ropa',
+    name: "Andes 3d E-commerce",
     description:
-      'Tienda de ropa online con catálogo de productos, carrito de compras y diseño propio. Construida desde cero prestando atención a la experiencia de usuario y la consistencia visual.',
-    quote: '"Mi primer proyecto completo. Cada decisión de diseño fue intencional, cada línea de código fue un aprendizaje."',
+      "Tienda de Materiales didácticos y de accesibilidad fabricados en impresión 3D para instituciones en Colombia, cree una landing profesional y mobile-first, +10 productos con diseño 3d totalmente funcional, dashboard admin funcional, chatbot con ia integrada e integracion de imagen a 3d potenciado por ia.",
+    quote:
+      '"En este proyecto lideré equipos y fortalecí mi capacidad de trabajar bajo presión. Además, integré modelos 3D en páginas web dinámicas."',
     stack: [
-      { name: 'HTML',      Icon: SiHtml5,      color: '#E34F26' },
-      { name: 'CSS',       Icon: SiCss3,       color: '#1572B6' },
-      { name: 'JS',        Icon: SiJavascript, color: '#F7DF1E' },
-      { name: 'Bootstrap', Icon: SiBootstrap,  color: '#7952B3' },
+      { name: "Typescript", Icon: SiTypescript, color: "#1572B6" },
+      { name: "Next.js", Icon: SiNextdotjs, color: "#000000" },
+      { name: "TailwindCSS", Icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "PostgreSQL", Icon: SiPostgresql, color: "#4169E1" },
     ],
-    liveUrl: 'https://kevinz-08.github.io/app_de_ecommerce_de_ropa/',
-    repoUrl: 'https://github.com/kevinz-08/app_de_ecommerce_de_ropa',
-    accent: '#6366f1',
+    liveUrl: "https://andes3d.vercel.app/",
+    repoUrl: "#",
+    accent: "#6366f1",
   },
   {
-    name: 'Formula 1 Website',
+    name: "Recipe Finder App",
     description:
-      'Recreación de la página principal de Formula 1 con pantalla de login y navegación temática. Enfocado en fidelidad visual y detalles de marca.',
-    quote: '"Replicar un diseño real me enseñó más sobre CSS y atención al detalle que cualquier tutorial."',
+      "Desarrollé una aplicación de gestión de recetas con consumo de API y sistema de roles. Incluye dashboards personalizados, creación de planes de alimentación semanal, gestión de favoritos, perfiles de usuario y listas de compras automatizadas.",
+    quote:
+      '"Más que consumir una API, aprendí a estructurar la experiencia del usuario final, transformando datos en herramientas de valor como planes nutricionales y sistemas de gestión personalizados."',
     stack: [
-      { name: 'HTML', Icon: SiHtml5,      color: '#E34F26' },
-      { name: 'CSS',  Icon: SiCss3,       color: '#1572B6' },
-      { name: 'JS',   Icon: SiJavascript, color: '#F7DF1E' },
+      { name: "React", Icon: SiReact, color: "#61DAFB" },
+      { name: "TailwindCSS", Icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "Typescript", Icon: SiTypescript, color: "#3178C6" },
+      { name: "NodeJS", Icon: SiNodedotjs, color: "#5FA04E" },
+      { name: "ExpressJS", Icon: SiExpress, color: "#ffffff" },
+      { name: "MongoDB", Icon: SiMongodb, color: "#47A248" },
     ],
-    liveUrl: 'https://jdmeneses27.github.io/formula1/login.html',
-    repoUrl: 'https://github.com/JDMeneses27/formula1',
-    accent: '#ef4444',
+    liveUrl: "https://recipe-finder-ksga.vercel.app/",
+    repoUrl: "https://github.com/kevinz-08/recipe-finder-app",
+    accent: "#ef4444",
   },
   {
-    name: 'Prototipo Inclusivo',
+    name: "Prototipo Inclusivo",
     description:
-      'Aplicación web con juego interactivo diseñado para personas con dificultades visuales. La accesibilidad como centro de cada decisión de desarrollo.',
-    quote: '"Diseñar para todos me cambió la perspectiva. La accesibilidad no es opcional, es responsabilidad."',
+      "Aplicación web con juego interactivo diseñado para personas con dificultades visuales. La accesibilidad como centro de cada decisión de desarrollo.",
+    quote:
+      '"Diseñar para todos me cambió la perspectiva. La accesibilidad no es opcional, es responsabilidad."',
     stack: [
-      { name: 'HTML', Icon: SiHtml5,      color: '#E34F26' },
-      { name: 'CSS',  Icon: SiCss3,       color: '#1572B6' },
-      { name: 'JS',   Icon: SiJavascript, color: '#F7DF1E' },
+      { name: "HTML", Icon: SiHtml5, color: "#E34F26" },
+      { name: "CSS", Icon: SiCss3, color: "#1572B6" },
+      { name: "JS", Icon: SiJavascript, color: "#F7DF1E" },
     ],
-    liveUrl: 'https://kevinz-08.github.io/prototipo-interactivo-de-pagina-web-para-personas-con-dificultades-visuales/views/black-home.html',
-    repoUrl: 'https://github.com/kevinz-08/prototipo-interactivo-de-pagina-web-para-personas-con-dificultades-visuales',
-    accent: '#10b981',
+    liveUrl:
+      "https://kevinz-08.github.io/prototipo-interactivo-de-pagina-web-para-personas-con-dificultades-visuales/views/black-home.html",
+    repoUrl:
+      "https://github.com/kevinz-08/prototipo-interactivo-de-pagina-web-para-personas-con-dificultades-visuales",
+    accent: "#10b981",
   },
-]
+];
 
 export default function Proyectos() {
   const [active, setActive]       = useState(0)

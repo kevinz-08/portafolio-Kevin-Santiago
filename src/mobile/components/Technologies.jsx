@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {
   SiReact, SiVuedotjs, SiNextdotjs, SiJavascript, SiTypescript, SiBootstrap, SiThreedotjs,
-  SiNodedotjs, SiExpress, SiNestjs, SiPython, SiDjango, SiClerk,
+  SiNodedotjs, SiExpress, SiNestjs, SiPython, SiDjango, SiPhp, SiLaravel, SiClerk,
   SiPostgresql, SiPrisma, SiMysql, SiMongodb,
   SiOpenai, SiN8N, SiLangchain, SiOllama, SiAnthropic,
   SiGit, SiGithub, SiVercel, SiRailway, SiRender, SiPostman, SiJira,
@@ -40,6 +40,8 @@ const GROUPS = [
       { name: 'NestJS',  Icon: SiNestjs,    color: '#E0234E'  },
       { name: 'Python',  Icon: SiPython,    color: '#3776AB'  },
       { name: 'Django',  Icon: SiDjango,    color: '#092E20'  },
+      { name: 'PHP',     Icon: SiPhp,       color: '#777BB4'  },
+      { name: 'Laravel', Icon: SiLaravel,   color: '#FF2D20'  },
       { name: 'Clerk',   Icon: SiClerk,     color: '#6C47FF'  },
     ],
   },

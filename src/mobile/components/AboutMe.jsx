@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import cvPdf from '../../img/Kevin Gutierrez - HV.pdf'
+import cvPdf from '../../img/HV-Kevin-Gutierrez.pdf'
 import foto  from '../../img/miHistoriaImage.jpg'
 
 const DS = {

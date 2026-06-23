@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import globantLogo from '../../img/globantCompany-logo.webp'
+import brainsolImage from '../../img/brainsol-image.png'
+import ecommerceImage from '../../img/e-commerce-image.png'
 
 const DS = {
   bg:            '#0a0a0a',
@@ -10,10 +12,13 @@ const DS = {
 }
 
 const ITEMS = [
-  { id: 1, type: 'Empresa',   name: 'Globant',          role: 'Frontend Developer',     period: '2024 – Presente', bgColor: '#2e2e2e', bgImage: globantLogo },
-  { id: 2, type: 'Empresa',   name: 'Empresa B',        role: 'React Developer',        period: '2023 – 2024',     bgColor: '#3a3a3a' },
-  { id: 3, type: 'Freelance', name: 'E-Commerce Store', role: 'React · Node.js · Tailwind', period: '2024',       bgColor: '#262626' },
-  { id: 4, type: 'Freelance', name: 'Landing Corporativa', role: 'Next.js · Framer Motion', period: '2023',       bgColor: '#333333' },
+  { id: 1, type: 'Empresa',   name: 'Globant',          role: 'Frontend Developer',          period: '2024 – 2026', bgColor: '#2e2e2e', bgImage: globantLogo,
+    description: 'Gestión integral de proyectos de software: desde el análisis y levantamiento de requerimientos hasta el desarrollo, pruebas de calidad y soporte técnico especializado, siempre alineado con las necesidades operativas de la empresa.' },
+  { id: 2, type: 'Freelance', name: 'E-Commerce Store', role: 'React · Node.js · Tailwind',  period: '2026',            bgColor: '#262626', bgImage: ecommerceImage,
+    description: 'E-commerce especializado en la comercialización de productos, diseñado con una interfaz funcional para la gestión eficiente de catálogos y transacciones. La plataforma integra herramientas de automatización para optimizar la experiencia de compra y el procesamiento de pedidos, facilitando la operatividad comercial para sus usuarios.' },
+  { id: 3, type: 'Freelance', name: 'Brain Solutions',  role: 'Next.js · Framer Motion',     period: '2026',            bgColor: '#333333', bgImage: brainsolImage,
+    link: 'https://brainsol.vercel.app/',
+    description: 'Consultoría de software escalable: análisis, arquitectura, desarrollo y despliegue de soluciones digitales a medida.' },
 ]
 
 export default function Experiencia() {
@@ -160,10 +165,18 @@ function ExperienceCard({ item }) {
 
       {/* Expanded info overlay */}
       {open && (
-        <div style={{ position: 'absolute', inset: 0, zIndex: 10, backgroundColor: 'rgba(10,10,10,0.92)', backdropFilter: 'blur(8px)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', fontWeight: 300, color: 'rgba(255,255,255,0.4)', letterSpacing: '0.05em' }}>
-            Contenido próximamente
+        <div style={{ position: 'absolute', inset: 0, zIndex: 10, backgroundColor: 'rgba(10,10,10,0.92)', backdropFilter: 'blur(8px)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px', textAlign: 'center' }}>
+          <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '12px', fontWeight: 300, lineHeight: 1.7, color: 'rgba(255,255,255,0.7)', margin: '0 0 16px' }}>
+            {item.description}
           </p>
+          {item.link && (
+            <a href={item.link} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '11px', fontWeight: 400, color: '#ffffff', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.35)', borderRadius: '999px', padding: '8px 16px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+              Visitar sitio
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
+          )}
         </div>
       )}
     </div>

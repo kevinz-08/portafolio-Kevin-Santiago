@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import globantLogo from '../../img/globantCompany-logo.webp'
+import brainsolImage from '../../img/brainsol-image.png'
+import ecommerceImage from '../../img/e-commerce-image.png'
 
 const DS = {
   bg: '#0a0a0a',
@@ -15,34 +17,32 @@ const ITEMS = [
     id: 1,
     type: 'Empresa',
     name: 'Globant',
-    role: 'Frontend Developer',
-    period: '2024 – Presente',
+    role: 'Trainee Developer',
+    period: '2025 – 2026',
     bgColor: '#2e2e2e',
     bgImage: globantLogo,
+    description: 'Gestión integral de proyectos de software: desde el análisis y levantamiento de requerimientos hasta el desarrollo, pruebas de calidad y soporte técnico especializado, siempre alineado con las necesidades operativas de la empresa.',
   },
   {
     id: 2,
-    type: 'Empresa',
-    name: 'Empresa B',
-    role: 'React Developer',
-    period: '2023 – 2024',
-    bgColor: '#3a3a3a',
+    type: 'Freelance',
+    name: 'E-Commerce Store',
+    role: 'Full Stack Developer',
+    period: 'Abr 2026 – Jun 2026',
+    bgColor: '#262626',
+    bgImage: ecommerceImage,
+    description: 'E-commerce especializado en la comercialización de productos, diseñado con una interfaz funcional para la gestión eficiente de catálogos y transacciones. La plataforma integra herramientas de automatización para optimizar la experiencia de compra y el procesamiento de pedidos, facilitando la operatividad comercial para sus usuarios.',
   },
   {
     id: 3,
     type: 'Freelance',
-    name: 'E-Commerce Store',
-    role: 'React · Node.js · Tailwind',
-    period: '2024',
-    bgColor: '#262626',
-  },
-  {
-    id: 4,
-    type: 'Freelance',
-    name: 'Landing Corporativa',
-    role: 'Next.js · Framer Motion',
-    period: '2023',
+    name: 'Brain Solutions',
+    role: 'Frontend Developer',
+    period: 'Abr 2026 – Jun 2026',
     bgColor: '#333333',
+    bgImage: brainsolImage,
+    link: 'https://brainsol.vercel.app/',
+    description: 'Consultoría de software escalable: análisis, arquitectura, desarrollo y despliegue de soluciones digitales a medida.',
   },
 ]
 
@@ -392,26 +392,45 @@ function Modal({ item, onClose }) {
           {item.role} · {item.period}
         </p>
 
-        <div style={{
-          height: '160px',
-          backgroundColor: '#1a1a1a',
-          borderRadius: '12px',
-          border: '1px dashed #2a2a2a',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
+        <p style={{
+          fontFamily: "'DM Sans', sans-serif",
+          fontSize: '14px',
+          fontWeight: 300,
+          lineHeight: 1.75,
+          color: DS.textSecondary,
+          margin: '0 0 24px',
         }}>
-          <p style={{
-            fontFamily: "'DM Sans', sans-serif",
-            fontSize: '13px',
-            fontWeight: 300,
-            color: DS.textTertiary,
-            margin: 0,
-            letterSpacing: '0.05em',
-          }}>
-            Contenido próximamente
-          </p>
-        </div>
+          {item.description}
+        </p>
+
+        {item.link && (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              fontFamily: "'DM Sans', sans-serif",
+              fontSize: '13px',
+              fontWeight: 400,
+              color: DS.textPrimary,
+              textDecoration: 'none',
+              border: '1px solid #2a2a2a',
+              borderRadius: '999px',
+              padding: '10px 20px',
+              transition: 'border-color 250ms, background-color 250ms',
+            }}
+            onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#ffffff'; e.currentTarget.style.backgroundColor = '#1a1a1a' }}
+            onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#2a2a2a'; e.currentTarget.style.backgroundColor = 'transparent' }}
+          >
+            Visitar sitio
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </a>
+        )}
       </div>
     </div>
   )

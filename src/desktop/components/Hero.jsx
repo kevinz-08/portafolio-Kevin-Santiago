@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import cvPdf from '../../img/Kevin Gutierrez - HV.pdf'
+import cvPdf from '../../img/HV-Kevin-Gutierrez.pdf'
 import SmokeShader from './SmokeShader'
 
 export default function Hero({ introComplete = false }) {
